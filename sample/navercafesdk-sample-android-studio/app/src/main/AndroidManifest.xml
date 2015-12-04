@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- package이 "네아로 개발자 센터"에 등록한 "안드로이드 앱 Package명"과 동일해야 합니다. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.naver.glink.sample">
+
+  <!-- Glink에 필요한 permission -->
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+  <application
+      android:allowBackup="true"
+      android:icon="@drawable/icon1"
+      android:label="@string/app_name"
+      android:supportsRtl="true"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+    <activity
+        android:name="com.naver.glink.sample.MainActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="sensorLandscape">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+  </application>
+
+</manifest>
