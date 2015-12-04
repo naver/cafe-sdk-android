@@ -1,4 +1,4 @@
-# Andrid용 Cafe SDK 
+# Android용 Cafe SDK 
 
 > 본 저장소는 Cafe SDK를 사용하기위한 library 및 관련 파일들을 포함하고 있습니다.
 
