@@ -26,7 +26,7 @@ lib/		 	| Android용 CafeSDK 라이브러리 파일
 sample/		| eclipse 및 android studio 용 sample project
 NOTICE     | 라이선스 파일
 NAVER-COPYING    |  네이버 라이선스 
-CHANGELOG   |  버전 업데이트 내역
+CHANGELOG   |  CafeSDK 버전 업데이트 내역
 README.md   | readme 파일
 
 
