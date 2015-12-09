@@ -7,9 +7,13 @@ Cafe SDK에 대하여 자세히 알고싶으시면 [네이버 CafeSDK 공식카�
 
 
 
-v.1.0.0
+v.1.0.1
 -------------
- NaverCafeSDK 오픈
+1. 게임 화면에 이벤트가 전달되는 이슈 수정.
+2. 안드로이드 홈 이동후 다시 게임에 진입하면 배너 사이즈가 변하는 이슈 수정.
+3. 목록 스크롤하면 검은색으로 변하는 버그 수정.
+4. 3d에서 느려지는 현상 수정
+5. ViewPager Indicator 라이브러리 제거
 
 
 폴더 구조
@@ -20,7 +24,9 @@ file      | 설명
 guide/			| 가이드 문서 및 CafeSDK 설명
 lib/		 	| Android용 CafeSDK 라이브러리 파일
 sample/		| eclipse 및 android studio 용 sample project
-LICENSE     | 라이선스 파일
+NOTICE     | 라이선스 파일
+NAVER-COPYING    |  네이버 라이선스 
+CHANGELOG   |  버전 업데이트 내역
 README.md   | readme 파일
 
 
@@ -34,9 +40,6 @@ README.md   | readme 파일
 5. [google gson](http://mvnrepository.com/artifact/com.google.code.gson/gson)  (2.3.1 사용 중)
 6. [glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide)  (3.6.1 사용 중)
 7. [otto](http://mvnrepository.com/artifact/com.squareup/otto)  (1.3.8 사용 중)
-8. [VierwPagerIndicator](http://mvnrepository.com/artifact/com.viewpagerindicator/library) (2.4.1 사용 중) 
-<br>**ViewPagerIndicator의 경우 jar가 아닌 라이브러리 형태로 배포되고 있습니다. aar or apklib or zip으로 받아 개발툴에 맞는 라이브러리를 사용하시면 됩니다.
-<br>**aar (https://bintray.com/populov/maven/com.viewpagerindicator:library)
 
 
 라이선스
