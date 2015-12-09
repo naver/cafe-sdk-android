@@ -37,3 +37,13 @@ README.md   | readme 파일
 8. [VierwPagerIndicator](http://mvnrepository.com/artifact/com.viewpagerindicator/library) (2.4.1 사용 중) 
 <br>**ViewPagerIndicator의 경우 jar가 아닌 라이브러리 형태로 배포되고 있습니다. aar or apklib or zip으로 받아 개발툴에 맞는 라이브러리를 사용하시면 됩니다.
 <br>**aar (https://bintray.com/populov/maven/com.viewpagerindicator:library)
+
+
+라이선스
+-------------
+NAVER Cafe SDK for Android
+
+Copyright 2015 NAVER Corp.
+All rights reserved.
+
+Unauthorized use, modification and redistribution of this software are strongly prohibited.
