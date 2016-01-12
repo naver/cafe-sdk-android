@@ -8,8 +8,7 @@
 
   <RelativeLayout
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:background="#ffffff">
+      android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,7 +36,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="8dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="12dp"
         android:background="@drawable/gl_btn_flreply"/>
 
     <include layout="@layout/include_network_error"/>

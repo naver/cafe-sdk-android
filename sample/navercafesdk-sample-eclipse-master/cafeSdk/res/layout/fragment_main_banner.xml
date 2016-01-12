@@ -1,8 +1,7 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.naver.glink.android.sdk.ui.MainBannerFragment">
+    android:layout_height="match_parent">
 
   <ImageView
       android:id="@+id/image_view"
@@ -23,8 +22,6 @@
       android:layout_height="0dp"
       android:layout_alignParentBottom="true"
       android:layout_alignParentRight="true"
-      android:layout_marginBottom="16dp"
-      android:layout_marginRight="16dp"
       android:visibility="gone"
       android:src="@drawable/gl_icon_mainmov"/>
 </RelativeLayout>

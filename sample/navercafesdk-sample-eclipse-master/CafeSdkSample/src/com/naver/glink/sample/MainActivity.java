@@ -1,6 +1,8 @@
 package com.naver.glink.sample;
 
 import android.app.Activity;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -28,6 +30,20 @@ public class MainActivity extends Activity {
     // 프로필 화면에서 매핑된 게임 아이디를 확인할 수 있습니다.
     Glink.setGameUserId(this, "id123", "게임 ID");
 
+    // SDK 시작 리스너 설정.
+    Glink.setOnSdkStartedListener(new Glink.OnSdkStartedListener() {
+      @Override public void onSdkStarted() {
+        Toast.makeText(MainActivity.this, "SDK 시작", Toast.LENGTH_LONG).show();
+      }
+    });
+
+    // SDK 종료 리스너 설정.
+    Glink.setOnSdkStoppedListener(new Glink.OnSdkStoppedListener() {
+      @Override public void onSdkStopped() {
+        Toast.makeText(MainActivity.this, "SDK 종료", Toast.LENGTH_LONG).show();
+      }
+    });
+    
     // 앱스킴 터치 리스너 설정.
     Glink.setOnClickAppSchemeBannerListener(new Glink.OnClickAppSchemeBannerListener() {
       @Override public void onClickAppSchemeBanner(String appScheme) {
@@ -74,7 +90,7 @@ public class MainActivity extends Activity {
 
     findViewById(R.id.write_button1).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        int menuId = 4; // 0이면 메뉴를 선택하지 않는다.
+        int menuId = 4; // -1이면 메뉴를 선택하지 않는다.
         String text = "기본 제목, 본문을 넣어서 글쓰기 화면을 시작합니다.";
         Glink.startWrite(MainActivity.this, menuId, "subject", text);
       }
@@ -82,7 +98,7 @@ public class MainActivity extends Activity {
 
     findViewById(R.id.write_button2).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        int menuId = 4; // 0이면 메뉴를 선택하지 않는다.
+        int menuId = 4; // -1이면 메뉴를 선택하지 않는다.
         String text = "기본 제목, 본문, 이미지를 넣어서 글쓰기 화면을 시작합니다.\n이미지는 uri 형태로 넣어주시면 됩니다.";
         String imageUri = "http://cafeimgs.naver.net/glink/img/gl_img_copyright.png";
         Glink.startImageWrite(MainActivity.this, menuId, "subject", text, imageUri);
@@ -91,11 +107,21 @@ public class MainActivity extends Activity {
 
     findViewById(R.id.write_button3).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        int menuId = 4; // 0이면 메뉴를 선택하지 않는다.
+        int menuId = 4; // -1이면 메뉴를 선택하지 않는다.
         String text = "기본 제목, 본문, 비디오를 넣어서 글쓰기 화면을 시작합니다.\n비디오는 uri 형태로 넣어주시면 됩니다.";
         String videoUri = "file://your_video_path";
         Glink.startVideoWrite(MainActivity.this, menuId, "subject", text, videoUri);
       }
     });
+    
+    findViewById(R.id.orientation_button).setOnClickListener(new View.OnClickListener() {
+        @Override public void onClick(View v) {
+          if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+          } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+          }
+        }
+      });
   }
 }

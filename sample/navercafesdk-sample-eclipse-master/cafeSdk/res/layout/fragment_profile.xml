@@ -13,7 +13,6 @@
       android:divider="@null"
       android:dividerHeight="0dp"
       android:listSelector="@drawable/gl_list_selector"
-      android:background="#ffffff"
       android:cacheColorHint="@android:color/transparent"/>
 
   <include layout="@layout/include_network_error"/>

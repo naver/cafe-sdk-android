@@ -24,12 +24,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:hint="댓글을 입력하세요."
+            android:hint="내용을 입력 하세요."
             android:maxHeight="80dp"
             android:padding="14dp"
             android:textColor="@color/black1"
             android:textSize="16dp"
-            android:theme="@android:style/Theme.DeviceDefault"
             android:imeOptions="flagNoExtractUi"/>
     </LinearLayout>
 

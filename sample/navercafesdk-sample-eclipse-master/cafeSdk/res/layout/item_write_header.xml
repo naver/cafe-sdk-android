@@ -4,40 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingRight="11dp"
-    android:paddingLeft="11dp"
-    android:paddingTop="24dp">
-
-  <RelativeLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="8dp">
-
-    <Button
-        android:id="@+id/cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/gl_btn_boardcancel"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
-        android:text="취소"
-        android:textColor="@color/gray4"
-        android:textSize="14dp"/>
-
-    <Button
-        android:id="@+id/join"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/gl_btn_boardconfirm"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
-        android:text="완료"
-        android:textColor="@color/white1"
-        android:textSize="14dp"/>
-  </RelativeLayout>
-
-  <include layout="@layout/include_divider"/>
+    android:paddingLeft="11dp">
 
   <Button
       android:id="@+id/menus_button"

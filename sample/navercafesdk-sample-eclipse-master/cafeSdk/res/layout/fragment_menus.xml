@@ -11,7 +11,6 @@
       xmlns:tools="http://schemas.android.com/tools"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:background="@drawable/gl_img_plate"
       android:baselineAligned="false"
       android:orientation="horizontal"
       tools:context="com.naver.glink.android.sdk.ui.MenusFragment">
@@ -20,7 +19,6 @@
         android:id="@+id/menus_list_view"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_marginRight="4dp"
         android:layout_weight="1"
         android:choiceMode="singleChoice"
         android:divider="@drawable/menu_list_divider"
@@ -31,6 +29,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
         android:clickable="true"
         android:visibility="gone"
         android:orientation="vertical">

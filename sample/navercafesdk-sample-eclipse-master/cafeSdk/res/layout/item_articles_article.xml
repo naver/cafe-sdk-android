@@ -2,8 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingLeft="24dp"
-    android:paddingRight="24dp"
     android:orientation="vertical">
 
   <LinearLayout
@@ -16,7 +14,7 @@
         android:layout_width="46dp"
         android:layout_height="46dp"
         android:layout_marginRight="10dp"
-        android:layout_gravity="center_vertical">
+        android:layout_marginTop="12dp">
 
       <ImageView
           android:id="@+id/thumbnail_image"
@@ -36,7 +34,6 @@
           android:src="@drawable/gl_btn_imagethumbmov_normal"/>
     </RelativeLayout>
 
-
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -49,13 +46,15 @@
           android:id="@+id/title"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:maxLines="2"
+          android:ellipsize="end"
           android:textColor="@color/black2"
           android:textSize="14dp"/>
 
       <LinearLayout
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginTop="5dp"
+          android:layout_marginTop="4dp"
           android:gravity="center_vertical"
           android:orientation="horizontal">
 
@@ -76,11 +75,22 @@
             android:visibility="gone"/>
 
         <TextView
+            android:id="@+id/writer_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:textColor="@color/gray4"
+            android:textSize="12dp"
+            android:singleLine="true"
+            android:visibility="gone"/>
+
+        <TextView
             android:id="@+id/detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/gray4"
-            android:textSize="14dp"/>
+            android:textSize="12dp"/>
       </LinearLayout>
     </LinearLayout>
 
@@ -88,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="6dp"
-        android:layout_gravity="center_vertical"
+        android:layout_marginTop="12dp"
         android:background="@drawable/gl_icon_reply">
 
       <TextView

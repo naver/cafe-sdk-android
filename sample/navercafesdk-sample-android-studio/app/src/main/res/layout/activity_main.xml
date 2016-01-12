@@ -36,49 +36,66 @@
         android:drawableTop="@drawable/icon1"
         android:text="event"/>
 
-    <Button
-        android:id="@+id/menu_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:drawableTop="@drawable/icon1"
-        android:text="menu"/>
 
-    <Button
-        android:id="@+id/profile_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:drawableTop="@drawable/icon1"
-        android:text="profile"/>
   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/write_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableTop="@drawable/icon1"
+            android:text="write1"/>
+
+        <Button
+            android:id="@+id/write_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableTop="@drawable/icon1"
+            android:text="write2"/>
+
+        <Button
+            android:id="@+id/write_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableTop="@drawable/icon1"
+            android:text="write3"/>
+
+
+    </LinearLayout>
 
   <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/menu_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:drawableTop="@drawable/icon1"
+          android:text="menu"/>
 
-    <Button
-        android:id="@+id/write_button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:drawableTop="@drawable/icon1"
-        android:text="write1"/>
-
-    <Button
-        android:id="@+id/write_button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:drawableTop="@drawable/icon1"
-        android:text="write2"/>
-
-    <Button
-        android:id="@+id/write_button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:drawableTop="@drawable/icon1"
-        android:text="write3"/>
+      <Button
+          android:id="@+id/profile_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:drawableTop="@drawable/icon1"
+          android:text="profile"/>
+      <Button
+          android:id="@+id/orientation_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:drawableTop="@drawable/icon1"
+          android:text="@string/orientation_string"/>
   </LinearLayout>
+
+
 </LinearLayout>

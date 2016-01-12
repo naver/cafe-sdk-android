@@ -5,11 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gl_img_plate"
-    tools:context="com.naver.glink.android.sdk.ui.HomeFragment">
+    tools:context=".ui.home.HomeFragment">
 
   <RelativeLayout
-      android:id="@+id/only_main_layout"
+      android:id="@+id/full_banners_layout"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:visibility="gone"
@@ -26,7 +25,6 @@
         android:layout_width="match_parent"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="8dp"
         android:padding="1dp"
         app:radius="5dp"
         app:fillColor="#00c300"
@@ -49,29 +47,7 @@
         android:layout_weight="1"
         android:visibility="gone">
 
-      <ImageView
-          android:id="@+id/main_banner_image"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"/>
 
-      <ImageView
-          android:id="@+id/movie_gradient"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_alignParentBottom="true"
-          android:scaleType="fitXY"
-          android:src="@drawable/gl_img_fullboard_gradient"/>
-
-      <ImageView
-          android:id="@+id/movie_icon"
-          android:layout_width="0dp"
-          android:layout_height="0dp"
-          android:layout_alignParentBottom="true"
-          android:layout_alignParentRight="true"
-          android:layout_marginBottom="6dp"
-          android:layout_marginRight="6dp"
-          android:visibility="gone"
-          android:src="@drawable/gl_icon_mainmov"/>
     </RelativeLayout>
 
     <ListView
