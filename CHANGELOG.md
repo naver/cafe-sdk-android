@@ -1,12 +1,12 @@
 v.1.1.0
 -------------
-#updated
+updated
 1. 세로형 app 지원. (세로형 UI가 새로 적용되었습니다)
 2. 전체 게시판 검색 지원.
 3. 카페SDK 시작 및 종료 리스너 추가 
     (setOnSdkStartedListener() 와 setOnSdkStoppedListener() 를 통하여 제공)
 
-#fixed
+fixed
 1. android support v13 -> v4로 변경
 2. 구조 개선 및 알려진 버그 수정
 
