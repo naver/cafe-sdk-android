@@ -20,7 +20,6 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:choiceMode="singleChoice"
         android:divider="@drawable/menu_list_divider"
         android:dividerHeight="1dp"
         android:listSelector="@drawable/gl_list_selector"

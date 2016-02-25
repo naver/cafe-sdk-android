@@ -62,6 +62,8 @@
               android:layout_weight="1"
               android:background="@android:color/transparent"
               android:gravity="center_vertical"
+              android:textColor="@color/black2"
+              android:textColorHint="#80999999"
               android:hint="별명을 입력하세요."
               android:paddingLeft="12dp"
               android:singleLine="true"

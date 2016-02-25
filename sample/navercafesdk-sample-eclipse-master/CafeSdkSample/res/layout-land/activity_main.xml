@@ -81,12 +81,20 @@
         android:drawableTop="@drawable/icon1"
         android:text="write3"/>
 
-      <Button
-          android:id="@+id/orientation_button"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_margin="10dp"
-          android:drawableTop="@drawable/icon1"
-          android:text="@string/orientation_string"/>
+    <Button
+        android:id="@+id/articles_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableTop="@drawable/icon1"
+        android:text="특정 게시판\n바로가기"/>
+
+    <Button
+        android:id="@+id/orientation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableTop="@drawable/icon1"
+        android:text="@string/orientation_string"/>
   </LinearLayout>
 </LinearLayout>

@@ -3,5 +3,7 @@
     package="com.naver.glink.android.sdk"
     android:versionCode="1"
     android:versionName="1.0" >
-
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
 </manifest>
