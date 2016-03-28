@@ -80,18 +80,6 @@
               android:drawableLeft="@drawable/gl_btn_cancel"/>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/modify"
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:layout_marginLeft="4dp"
-            android:background="@drawable/gl_btn_confirm1"
-            android:gravity="center"
-            android:paddingLeft="18dp"
-            android:paddingRight="18dp"
-            android:textColor="@color/white1"
-            android:textSize="16dp"
-            android:text="수정하기"/>
       </LinearLayout>
 
       <RelativeLayout

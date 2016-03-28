@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/gl_btn_logout"
             android:textSize="13dp"
-            android:textColor="@color/white1"
+              android:textColor="@drawable/gl_white_text"
             android:textStyle="bold"
               android:gravity="center"
             android:text="로그아웃"/>

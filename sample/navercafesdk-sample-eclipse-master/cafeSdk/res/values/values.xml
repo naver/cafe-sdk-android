@@ -33,8 +33,10 @@
     <color name="refresh_progress_1">#e91e63</color>
     <color name="refresh_progress_2">#00b0ff</color>
     <color name="refresh_progress_3">#3f51b5</color>
+    <color name="text_divider">#b2b2b2</color>
     <color name="viewer_bg">#222222</color>
     <color name="white1">#ffffff</color>
+    <color name="white1_30p">#4dffffff</color>
     <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle"><enum name="none" value="0"/><enum name="triangle" value="1"/><enum name="underline" value="2"/></attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition"><enum name="bottom" value="0"/><enum name="top" value="1"/></attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
@@ -61,6 +63,7 @@
     <integer name="default_underline_indicator_fade_delay">300</integer>
     <integer name="default_underline_indicator_fade_length">400</integer>
     <string name="already_exist_nickname_message">이미 사용 중인 별명입니다.</string>
+    <string name="article_count_txt">작성한 글</string>
     <string name="article_save_complete_message">게시글이 등록 되었습니다.</string>
     <string name="article_save_fail_message">글쓰기에 실패했습니다.</string>
     <string name="article_save_progress_message">글쓰기 저장중...</string>
@@ -78,6 +81,7 @@
     <string name="image_permission_setting_message">권한이 없어 사진 첨부를 할 수 없습니다. 설정 > 앱 > 해당 게임에서 저장 권한을 확인해 주세요.</string>
     <string name="image_upload_fail_message">이미지를 업로드 할 수 없습니다.</string>
     <string name="internet_not_connected_error">인터넷에 연결되어 있지 않습니다.\n무선 인터넷 연결 상태를 확인해주세요.</string>
+    <string name="like_article_count_txt">좋아요</string>
     <string name="logout_complete_message">로그아웃 되었습니다.</string>
     <string name="logout_confirm_message">로그아웃 하시겠습니까?</string>
     <string name="member_count_format">회원수 %1$,d명</string>
@@ -88,12 +92,14 @@
     <string name="nickname_rule_message">최대 한글 10자, 영문 20자 (숫자 혼용가능)</string>
     <string name="no_menu_setting_message">메뉴가 설정되지 않았습니다.</string>
     <string name="not_available_nickname_message">사용할 수 없는 별명입니다.</string>
-    <string name="other_game_id_sync_message">다른 아이디로 로그인 하셨습니다. 아이디 동기화를 위해 확인 버튼을 눌러주세요.</string>
+    <string name="profile_visit">방문</string>
     <string name="require_join_message">카페에 가입해야 합니다.</string>
     <string name="require_login_message">네이버 아이디로 로그인 해주세요.</string>
     <string name="retry_after_a_while_message">잠시 후 다시 시도해 주세요.</string>
+    <string name="version">VERSION 1.4.0</string>
     <string name="waiting_join_apply_message">가입신청중입니다.</string>
     <string name="write_permission_error">해당 게시판의 글쓰기 권한이 없습니다.</string>
+    <string name="written_comment_count_txt">댓글단 글</string>
     <style name="Glink.SeekBar" parent="android:Widget.SeekBar">
     <item name="android:paddingLeft">0dip</item>
     <item name="android:paddingRight">16dip</item>

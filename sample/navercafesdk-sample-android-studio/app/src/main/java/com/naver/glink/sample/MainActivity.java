@@ -51,6 +51,30 @@ public class MainActivity extends Activity {
       }
     });
 
+    // 카페 가입 리스너를 설정.
+    Glink.setOnJoinedListener(new Glink.OnJoinedListener() {
+      @Override public void onJoined() {
+        Toast.makeText(MainActivity.this, "카페에 가입하였습니다. (from listener)", Toast.LENGTH_SHORT)
+            .show();
+      }
+    });
+
+    // 게시글 등록 리스너를 설정.
+    Glink.setOnPostedArticleListener(new Glink.OnPostedArticleListener() {
+      @Override public void onPostedArticle(int menuId) {
+        String message = String.format("게시글이 작성되었습니다. (from listener, 메뉴: %d)", menuId);
+        Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+      }
+    });
+
+    // 댓글 등록 리스너를 설정.
+    Glink.setOnPostedCommentListener(new Glink.OnPostedCommentListener() {
+      @Override public void onPostedComment(int articleId) {
+        String message = String.format("댓글이 작성되었습니다. (from listener, 게시글: %d)", articleId);
+        Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+      }
+    });
+
     findViewById(R.id.home_button).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         // 홈화면으로 시작합니다.

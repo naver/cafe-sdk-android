@@ -7,14 +7,14 @@
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:orientation="horizontal">
+      android:orientation="horizontal"
+      android:gravity="center_vertical">
 
     <RelativeLayout
         android:id="@+id/thumbnail_layout"
         android:layout_width="46dp"
         android:layout_height="46dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="12dp">
+        android:layout_marginRight="10dp">
 
       <ImageView
           android:id="@+id/thumbnail_image"
@@ -40,7 +40,9 @@
         android:layout_marginBottom="12dp"
         android:layout_marginTop="12dp"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
 
       <TextView
           android:id="@+id/title"
@@ -49,30 +51,15 @@
           android:maxLines="2"
           android:ellipsize="end"
           android:textColor="@color/black2"
-          android:textSize="14dp"/>
+          android:textSize="14dp"
+          android:layout_gravity="center_vertical"/>
 
       <LinearLayout
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginTop="4dp"
+          android:layout_marginTop="3dp"
           android:gravity="center_vertical"
           android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/menu_name"
-            android:layout_width="wrap_content"
-            android:layout_height="18dp"
-            android:layout_weight="1"
-            android:ellipsize="end"
-            android:layout_marginRight="8dp"
-            android:paddingLeft="9dp"
-            android:paddingRight="9dp"
-            android:gravity="center_vertical"
-            android:background="@drawable/gl_img_boardname"
-            android:textSize="10dp"
-            android:textColor="@color/gray4"
-            android:singleLine="true"
-            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/writer_nickname"
@@ -98,16 +85,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="6dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/gl_icon_reply">
+        android:paddingTop="1dp"
+        android:background="@drawable/gl_btn_reply">
 
       <TextView
           android:id="@+id/reply_count"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:paddingLeft="7dp"
+          android:paddingRight="7dp"
           android:layout_gravity="center_horizontal"
           android:layout_marginTop="5dp"
           android:textColor="#000000"
+          android:text="12"
           android:textSize="11dp"/>
     </FrameLayout>
   </LinearLayout>

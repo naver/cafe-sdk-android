@@ -4,16 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.naver.glink.android.sdk.ui.ProfileFragment">
+    tools:context="com.naver.glink.android.sdk.ui.profile.ProfileFragment">
 
-  <ListView
-      android:id="@android:id/list"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:divider="@null"
-      android:dividerHeight="0dp"
-      android:listSelector="@drawable/gl_list_selector"
-      android:cacheColorHint="@android:color/transparent"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
 
-  <include layout="@layout/view_fragment_error"/>
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/gl_list_selector"
+            android:cacheColorHint="@android:color/transparent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <include layout="@layout/view_fragment_error"/>
 </FrameLayout>
