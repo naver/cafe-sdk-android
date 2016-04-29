@@ -27,7 +27,7 @@
     <color name="gray1">#cccccc</color>
     <color name="gray3">#c7c8ca</color>
     <color name="gray4">#999999</color>
-    <color name="green1">#00d650</color>
+    <color name="green1">#00C73C</color>
     <color name="list_selector_color">#e9ecef</color>
     <color name="red1">#fa0505</color>
     <color name="refresh_progress_1">#e91e63</color>
@@ -67,6 +67,7 @@
     <string name="article_save_complete_message">게시글이 등록 되었습니다.</string>
     <string name="article_save_fail_message">글쓰기에 실패했습니다.</string>
     <string name="article_save_progress_message">글쓰기 저장중...</string>
+    <string name="attachment_add_fail_message">이미지/동영상을 첨부할 수 없습니다.</string>
     <string name="available_nickname_message">사용 가능한 별명입니다.</string>
     <string name="cafe_app_install_confirm_message">네이버 카페앱을 설치하거나 업데이트하시면 이용할 수 있습니다. 설치하시겠습니까?</string>
     <string name="cancel">취소</string>
@@ -96,7 +97,7 @@
     <string name="require_join_message">카페에 가입해야 합니다.</string>
     <string name="require_login_message">네이버 아이디로 로그인 해주세요.</string>
     <string name="retry_after_a_while_message">잠시 후 다시 시도해 주세요.</string>
-    <string name="version">VERSION 1.4.0</string>
+    <string name="version">VERSION 1.5.0</string>
     <string name="waiting_join_apply_message">가입신청중입니다.</string>
     <string name="write_permission_error">해당 게시판의 글쓰기 권한이 없습니다.</string>
     <string name="written_comment_count_txt">댓글단 글</string>

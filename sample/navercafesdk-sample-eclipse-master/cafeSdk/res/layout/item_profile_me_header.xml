@@ -49,7 +49,7 @@
           android:layout_height="wrap_content"
           android:layout_alignParentBottom="true"
           android:layout_alignParentRight="true"
-          android:src="@drawable/gl_btn_profile_thumb_edit_normal"/>
+          android:src="@drawable/gl_btn_personal_profile_setting"/>
     </RelativeLayout>
 
       <RelativeLayout
