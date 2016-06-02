@@ -91,7 +91,7 @@
               android:textColor="@drawable/gl_white_text"
             android:textStyle="bold"
               android:gravity="center"
-            android:text="로그아웃"/>
+              android:text="@string/profile_logout"/>
       </LinearLayout>
     </LinearLayout>
   </LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/transparent"
-    android:hint="내용을 입력하세요."
+    android:hint="@string/save_error_contents"
     android:paddingBottom="24dp"
     android:paddingRight="14dp"
     android:paddingLeft="11dp"

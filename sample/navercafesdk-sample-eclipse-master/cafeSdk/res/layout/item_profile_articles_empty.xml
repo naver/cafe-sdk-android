@@ -11,5 +11,5 @@
     android:drawablePadding="22dp"
     android:textColor="@color/gray4"
     android:textSize="16dp"
-    android:text="게시글이 없습니다."
+    android:text="@string/empty_articles_message"
     android:clickable="true"/>

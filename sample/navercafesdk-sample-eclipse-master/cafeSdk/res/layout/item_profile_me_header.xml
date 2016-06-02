@@ -119,7 +119,7 @@
                       android:layout_height="wrap_content"
                       android:layout_marginLeft="8dp"
                       android:layout_alignBaseline="@+id/header_grade"
-                      android:text="방문 0"
+                      android:text="@string/profile_visit"
                       android:textColor="@color/white1_30p"
                       android:textSize="12dp"/>
               </LinearLayout>
@@ -135,7 +135,7 @@
                   android:textSize="11dp"
                   android:textColor="@drawable/gl_white_text"
                   android:gravity="center"
-                  android:text="로그아웃"/>
+                  android:text="@string/profile_logout"/>
           </RelativeLayout>
       </RelativeLayout>
 

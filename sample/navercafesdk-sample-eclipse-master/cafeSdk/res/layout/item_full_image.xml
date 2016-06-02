@@ -52,7 +52,7 @@
             android:paddingRight="18dp"
             android:textColor="@color/white1"
             android:textSize="16dp"
-            android:text="다시 시도하기"/>
+            android:text="@string/retry_error"/>
     </LinearLayout>
 
 

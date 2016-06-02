@@ -21,8 +21,7 @@
     <FrameLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="@drawable/gl_img_plate">
+        android:layout_weight="1">
 
       <FrameLayout
           android:id="@+id/tab_contents"
@@ -36,4 +35,13 @@
           android:src="@drawable/gl_img_shadow"/>
     </FrameLayout>
   </LinearLayout>
+
+  <ProgressBar
+      android:id="@+id/tab_progress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="?android:attr/progressBarStyleSmall"
+      android:max="100"
+      android:visibility="gone"
+      android:layout_gravity="center"/>
 </FrameLayout>

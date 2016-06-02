@@ -22,7 +22,7 @@
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="별명입력"
+          android:text="@string/nick_name_header"
           android:textColor="@color/black2"
           android:textStyle="bold"
           android:textSize="16dp"/>
@@ -64,7 +64,7 @@
               android:gravity="center_vertical"
               android:textColor="@color/black2"
               android:textColorHint="#80999999"
-              android:hint="별명을 입력하세요."
+              android:hint="@string/nick_name_hint"
               android:paddingLeft="12dp"
               android:singleLine="true"
               android:textSize="16dp"
@@ -120,7 +120,7 @@
               android:layout_centerVertical="true"
               android:textSize="14dp"
               android:textColor="@color/black2"
-              android:text="카페 이용약관 동의"/>
+              android:text="@string/nick_name_join_agree"/>
         </RelativeLayout>
       </RelativeLayout>
 
@@ -184,7 +184,7 @@
         android:gravity="center"
         android:paddingLeft="18dp"
         android:paddingRight="18dp"
-        android:text="취소"
+        android:text="@string/cancel"
         android:textColor="@color/white1"
         android:textSize="16dp"
         android:visibility="gone"/>
@@ -199,6 +199,6 @@
         android:paddingRight="18dp"
         android:textColor="@color/white1"
         android:textSize="16dp"
-        android:text="가입하기"/>
+        android:text="@string/nick_name_join"/>
   </LinearLayout>
 </LinearLayout>

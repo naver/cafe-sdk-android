@@ -37,7 +37,7 @@
           android:textColor="@color/black2"
           android:textColorHint="#80999999"
           android:textSize="16dp"
-          android:hint="검색어를 입력하세요."/>
+          android:hint="@string/search_hint"/>
 
       <Button
           android:id="@+id/show_histories_button"

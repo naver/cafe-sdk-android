@@ -122,7 +122,7 @@
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:layout_marginLeft="8dp"
-                      android:text="방문 0"
+                      android:text="@string/profile_visit"
                       android:textColor="@color/white1_30p"
                       android:textSize="14dp"/>
 
