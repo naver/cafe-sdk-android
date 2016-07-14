@@ -3,15 +3,25 @@
 > 본 저장소는 Cafe SDK를 사용하기위한 library 및 관련 파일들을 포함하고 있습니다.
 
 Cafe SDK에 대하여 자세히 알고싶으시면 [네이버 CafeSDK 공식카페](http://cafe.naver.com/navercafesdk)를 참조해 주세요.
-
-v.1.6.0
--------------
-####updated
-1. 카페 위젯을 지원하여 게임내 어디서든 카페를 이용 할 수 있습니다.
 ![Overviw](/guide/images/widget_screenshot.gif)
 
+v.1.7.0
+-------------
+####updated
+1. 위젯을 통하여 동영상 녹확 기능을 제공합니다.
+2. 콜백 API 개선 (투표 완료 리스너를 제공합니다)
+
+
 ####fixed
-1. 게시글 간 이동이 자연스럽게 보이도록 수정
+1. 메소드가 추가 및 변경되었습니다
+  - setGameUserId 제거 -> syncGameUserId 로 사용 권장
+  - setWidgetUse 제거 -> showWidgetWhenUnloadSDK 로 사용 권장
+  - OnPostedArticleListener 인자값 변경
+
+2. 동영상 녹화 기능 사용을 위한 권한이 추가되었습니다. (녹화를 사용할 경우 필수 권한)
+  - android.permission.WRITE_EXTERNAL_STORAGE
+  - android.permission.RECORD_AUDIO
+
 
 
 폴더 구조

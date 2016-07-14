@@ -3,10 +3,15 @@ package com.naver.glink.sample;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import com.naver.glink.android.sdk.Glink;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
 public class MainActivity extends Activity {
 
@@ -25,8 +30,10 @@ public class MainActivity extends Activity {
     Glink.init(clientId, clientSecret, cafeId);
 
     // 게임 아이디와 카페 아이디를 매핑합니다.
-    // 프로필 화면에서 매핑된 게임 아이디를 확인할 수 있습니다.
-    Glink.setGameUserId(this, "id123", "게임 ID");
+    Glink.syncGameUserId(this, "id123");
+
+    // 동영상 녹화 기능을 사용합니다.
+    Glink.setUseVideoRecord(this, true);
 
     // SDK 시작 리스너 설정.
     Glink.setOnSdkStartedListener(new Glink.OnSdkStartedListener() {
@@ -59,9 +66,13 @@ public class MainActivity extends Activity {
       }
     });
 
-    // 게시글 등록 리스너를 설정.
+    /** 게시글 등록 리스너를 설정.
+     * @param menuId 게시글이 등록된 menuId
+     * @param imageCount 첨부한 image 갯수
+     * @param videoCount 첨부한 video 갯수
+     **/
     Glink.setOnPostedArticleListener(new Glink.OnPostedArticleListener() {
-      @Override public void onPostedArticle(int menuId) {
+      @Override public void onPostedArticle(int menuId, int imageCount, int videoCount) {
         String message = String.format("게시글이 작성되었습니다. (from listener, 메뉴: %d)", menuId);
         Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
       }
@@ -72,6 +83,30 @@ public class MainActivity extends Activity {
       @Override public void onPostedComment(int articleId) {
         String message = String.format("댓글이 작성되었습니다. (from listener, 게시글: %d)", articleId);
         Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+      }
+    });
+
+    // 투표 완료 리스너를 설정.
+    Glink.setOnVotedListener(new Glink.OnVotedListener() {
+      @Override public void onVoted(int articleId) {
+        String message = String.format("투표가 완료 되었습니다. (from listener, 게시글: %d)", articleId);
+        Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+      }
+    });
+
+
+    //위젯 스크린샷 버튼 클릭 리스너 설정.
+    Glink.setOnWidgetScreenshotClickListener(new Glink.OnWidgetScreenshotClickListener() {
+      @Override public void onScreenshotClick() {
+        String path = screenshot(MainActivity.this);
+        Glink.startImageWrite(MainActivity.this, -1, "screen shot!", "스크린샷 테스트", path);
+      }
+    });
+
+    //동영상 녹화 완료 리스너 설정.
+    Glink.setOnRecordFinishListener(new Glink.OnRecordFinishListener() {
+      @Override public void onRecordFinished(String uri) {
+        Glink.startVideoWrite(MainActivity.this, -1, "동영상 녹화", "녹화", uri);
       }
     });
 
@@ -152,5 +187,34 @@ public class MainActivity extends Activity {
         }
       }
     });
+  }
+
+
+  public String screenshot(Activity activity) {
+    View view =
+        activity.getWindow().getDecorView().findViewById(android.R.id.content).getRootView();
+
+    view.setDrawingCacheEnabled(true);
+    view.buildDrawingCache(true);
+
+    Bitmap screenshot = view.getDrawingCache(true);
+
+    String filename = "screenshot" + System.currentTimeMillis() + ".png";
+    String fileUri = null;
+    try {
+      File f = new File(activity.getFilesDir(), filename);
+
+      f.createNewFile();
+      fileUri = f.toURI().toString();
+
+      OutputStream outStream = new FileOutputStream(f);
+      screenshot.compress(Bitmap.CompressFormat.PNG, 100, outStream);
+      outStream.close();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    view.setDrawingCacheEnabled(false);
+    return fileUri;
   }
 }

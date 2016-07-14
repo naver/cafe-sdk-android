@@ -25,6 +25,7 @@
     <color name="default_title_indicator_text_color">#BBFFFFFF</color>
     <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
     <color name="gray1">#cccccc</color>
+    <color name="gray2">#c1c1c1</color>
     <color name="gray3">#c7c8ca</color>
     <color name="gray4">#999999</color>
     <color name="green1">#00C73C</color>
@@ -116,9 +117,24 @@
     <string name="nickname_rule_message">최대 한글 10자, 영문 20자 (숫자 혼용가능)</string>
     <string name="no_menu_setting_message">메뉴가 설정되지 않았습니다.</string>
     <string name="not_available_nickname_message">사용할 수 없는 별명입니다.</string>
+    <string name="not_configured_event_menu_id">이벤트 메뉴가 설정되지 않았습니다.</string>
+    <string name="not_configured_notice_menu_id">공지사항 메뉴가 설정되지 않았습니다.</string>
     <string name="profile_logout">로그아웃</string>
     <string name="profile_visit">방문</string>
     <string name="recent_article_menu">최신글 보기</string>
+    <string name="record_error">동영상이 정상적으로 녹화되지 않았습니다.</string>
+    <string name="record_permission_error">권한이 없어 영상녹화를 할 수 없습니다.\n설정 > 앱 > 해당 게임에서 마이크, 저장 권한을 확인해
+    주세요
+  </string>
+    <string name="record_quality">녹화 품질</string>
+    <string name="record_quality_high">HIGH</string>
+    <string name="record_quality_low">LOW</string>
+    <string name="record_quality_std">NORMAL</string>
+    <string name="record_saved">Movies 폴더에 저장되었습니다.</string>
+    <string name="record_size">녹화 해상도</string>
+    <string name="record_size_360">360p</string>
+    <string name="record_size_480">480p</string>
+    <string name="record_size_720">720p</string>
     <string name="require_join_message">카페에 가입해야 합니다.</string>
     <string name="require_login_message">네이버 아이디로 로그인 해주세요.</string>
     <string name="retry">재시도</string>
@@ -134,7 +150,7 @@
     <string name="search_result_text">이 검색되었습니다</string>
     <string name="select_menu">게시판 선택</string>
     <string name="select_menu_button">게시판을 선택해주세요.</string>
-    <string name="version">VERSION 1.6.0</string>
+    <string name="version">VERSION 1.7.0</string>
     <string name="waiting_join_apply_message">가입신청중입니다.</string>
     <string name="widget_button_cafe">게임카페</string>
     <string name="widget_button_capture">화면캡쳐</string>
@@ -155,6 +171,14 @@
     <item name="android:maxHeight">13dip</item>
     <item name="android:focusable">true</item>
   </style>
+    <style name="record_setting_anim" parent="android:Animation">
+    <item name="@android:windowEnterAnimation">@anim/record_setting_dialog_enter</item>
+    <item name="@android:windowExitAnimation">@anim/record_setting_dialog_exit</item>
+  </style>
+    <style name="record_widget_anim" parent="android:Animation">
+    <item name="@android:windowEnterAnimation">@anim/widget_record_enter</item>
+    <item name="@android:windowExitAnimation">@anim/widget_record_exit</item>
+  </style>
     <style name="transparent_progress_dialog">
     <item name="android:windowFrame">@null</item>
     <item name="android:windowBackground">@android:color/transparent</item>
@@ -165,6 +189,10 @@
     <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
     <item name="android:backgroundDimEnabled">false</item>
     <item name="android:background">@android:color/transparent</item>
+  </style>
+    <style name="widget_dialog_anim" parent="android:Animation">
+    <item name="@android:windowEnterAnimation">@anim/widget_enter</item>
+    <item name="@android:windowExitAnimation">@anim/widget_exit</item>
   </style>
     <style name="widget_show_animation"/>
 </resources>
