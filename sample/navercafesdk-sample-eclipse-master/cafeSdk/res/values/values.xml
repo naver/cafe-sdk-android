@@ -123,7 +123,7 @@
     <string name="profile_visit">방문</string>
     <string name="recent_article_menu">최신글 보기</string>
     <string name="record_error">동영상이 정상적으로 녹화되지 않았습니다.</string>
-    <string name="record_permission_error">권한이 없어 영상녹화를 할 수 없습니다.\n설정 > 앱 > 해당 게임에서 마이크, 저장 권한을 확인해
+    <string name="record_permission_error">권한이 없어 영상녹화를 할 수 없습니다.\n설정 > 앱 > 해당 게임에서 저장 권한을 확인해
     주세요
   </string>
     <string name="record_quality">녹화 품질</string>
@@ -150,7 +150,7 @@
     <string name="search_result_text">이 검색되었습니다</string>
     <string name="select_menu">게시판 선택</string>
     <string name="select_menu_button">게시판을 선택해주세요.</string>
-    <string name="version">VERSION 1.7.0</string>
+    <string name="version">VERSION 1.7.2</string>
     <string name="waiting_join_apply_message">가입신청중입니다.</string>
     <string name="widget_button_cafe">게임카페</string>
     <string name="widget_button_capture">화면캡쳐</string>

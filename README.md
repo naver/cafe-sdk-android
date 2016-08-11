@@ -5,6 +5,19 @@
 Cafe SDK에 대하여 자세히 알고싶으시면 [네이버 CafeSDK 공식카페](http://cafe.naver.com/navercafesdk)를 참조해 주세요.
 ![Overviw](/guide/images/widget_screenshot.gif)
 
+v.1.7.2
+-------------
+####updated
+1. 동영상 녹화 시 권한 획득을 위해 얼럿 창을 띄웁니다. (구글 피처드)
+2. 콜백 API 개선 (투표 완료 리스너를 제공합니다)
+
+
+####fixed
+1. 세로모드 배너 사이즈 늘어나 보이던 이슈 수정
+2. 기타 버그 수정
+
+
+
 v.1.7.0
 -------------
 ####updated
