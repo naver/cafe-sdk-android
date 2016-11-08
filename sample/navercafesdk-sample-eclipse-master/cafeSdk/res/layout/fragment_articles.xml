@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gl_img_plate"
-    tools:context="com.naver.glink.android.sdk.ui.ArticlesFragment">
+    tools:context=".ui.articles.ArticlesFragment">
 
   <RelativeLayout
       android:layout_width="match_parent"

@@ -6,6 +6,7 @@
     android:paddingRight="11dp"
     android:paddingLeft="11dp"
     android:clickable="true"
+    android:baselineAligned="false"
     android:orientation="horizontal">
 
   <RelativeLayout

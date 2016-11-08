@@ -22,14 +22,15 @@
       android:layout_alignParentBottom="true"
       android:padding="@dimen/glink_widget_padding"
       fab:menu_icon="@drawable/gl_icon_close"
-      fab:menu_buttonSpacing="9dp"
+      fab:menu_buttonSpacing="10dp"
       fab:menu_labels_ellipsize="end"
       fab:menu_labels_singleLine="true"
       fab:menu_labels_position="right"
-      fab:menu_labels_textSize="15dp"
+      fab:menu_labels_textSize="12dp"
       fab:menu_labels_showShadow="false"
       fab:menu_backgroundColor="#ccffffff"
-      fab:menu_openDirection="right">
+      fab:menu_openDirection="right"
+      fab:menu_labels_maxLines="3">
 
     <com.github.clans.fab.FloatingActionButton
         android:id="@+id/float_item_cafe"

@@ -37,7 +37,7 @@
           android:textColor="@color/black2"
           android:textColorHint="#80999999"
           android:textSize="16dp"
-          android:hint="@string/search_hint"/>
+          android:hint="@string/article_search_placeholder"/>
 
       <Button
           android:id="@+id/show_histories_button"
@@ -57,7 +57,7 @@
 
       <TextView
         android:id="@+id/search"
-        android:layout_width="50dp"
+          android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:background="@drawable/gl_btn_search2"/>
   </LinearLayout>

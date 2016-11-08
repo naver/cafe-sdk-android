@@ -27,12 +27,6 @@
           android:id="@+id/tab_contents"
           android:layout_width="match_parent"
           android:layout_height="match_parent"/>
-
-      <ImageView
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:scaleType="fitXY"
-          android:src="@drawable/gl_img_shadow"/>
     </FrameLayout>
   </LinearLayout>
 
@@ -41,6 +35,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       style="?android:attr/progressBarStyleSmall"
+      android:theme="@style/notitle_transparent_defaultdialog"
       android:max="100"
       android:visibility="gone"
       android:layout_gravity="center"/>

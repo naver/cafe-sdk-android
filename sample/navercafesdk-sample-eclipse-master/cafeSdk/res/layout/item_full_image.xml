@@ -29,7 +29,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/gl_img_notialert"/>
+            android:src="@drawable/gl_ls_icon_warningbic"/>
 
         <TextView
             android:id="@+id/message"

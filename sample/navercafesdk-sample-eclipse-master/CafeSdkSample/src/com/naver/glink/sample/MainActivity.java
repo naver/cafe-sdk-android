@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.naver.glink.android.sdk.Glink;
+import com.naver.glink.android.sdk.model.LanguageCode;
 import com.naver.glink.android.sample.R;
 
 
@@ -31,7 +32,20 @@ public class MainActivity extends Activity {
 	    final int cafeId = 28290504;
 	    final String clientId = "197CymaStozo7X5r2qR5";
 	    final String clientSecret = "evCgKH1kJL";
-	    Glink.init(clientId, clientSecret, cafeId);
+	    
+	    /**
+	     * 제휴 이메일을 통해 신청을 하면 ConsumerKey, globalCafeId를 받을 수 있다.
+	     * 제휴 이메일 주소: dl_gamesdkpartner@navercorp.com
+	     */
+	    final int globalCafeId = 1013329;
+	    final String neoIdConsumerKey = "IHCd_HmSiMcXOMC37xZ8";
+	    final String defaultChannel = LanguageCode.ENGLISH.getCode();
+	    
+	    //국내 카페 초기화
+	    Glink.init(this, clientId, clientSecret, cafeId);
+
+	    //글로벌 카페 초기화. 국내 카페만 사용할 경우 initGlobal을 하지 않아도 됩니다
+	    //Glink.initGlobal(this, neoIdConsumerKey, globalCafeId, defaultChannel);
 
 	    // 게임 아이디와 카페 아이디를 매핑합니다.
 	    Glink.syncGameUserId(this, "id123");

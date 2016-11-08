@@ -2,20 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white1">
 
   <LinearLayout
       android:id="@+id/manage_member_menu_layout"
       android:layout_width="match_parent"
-      android:layout_height="45dp"
-      android:orientation="horizontal">
+      android:layout_height="29dp"
+      android:layout_marginTop="22dp"
+      android:orientation="horizontal"
+      android:layout_marginLeft="24dp"
+      android:layout_marginRight="24dp"
+      android:baselineAligned="false">
 
     <LinearLayout
         android:id="@+id/article_count_btn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/white1"
+        android:background="@drawable/gl_article_type_header_background"
         android:orientation="horizontal"
         android:gravity="center">
 
@@ -28,9 +33,8 @@
           android:paddingRight="1dp"
           android:text="@string/article_count_txt"
           android:textColor="@drawable/gl_article_header_text_color"
-          android:textSize="16dp"
-          android:textStyle="bold"
-          android:background="@drawable/gl_article_header_background"/>
+          android:textSize="13dp"
+          android:textStyle="bold"/>
       <TextView
           android:id="@+id/article_count"
           android:layout_width="wrap_content"
@@ -39,8 +43,7 @@
           android:gravity="center_vertical|left"
           android:text="222"
           android:textColor="@drawable/gl_article_header_text_color"
-          android:textSize="16dp"
-          android:background="@drawable/gl_article_header_background"/>
+          android:textSize="13dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -48,7 +51,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/white1"
+        android:layout_marginLeft="-2dp"
+        android:background="@drawable/gl_article_type_header_background"
         android:orientation="horizontal"
         android:gravity="center">
 
@@ -61,9 +65,8 @@
           android:paddingRight="1dp"
           android:text="@string/written_comment_count_txt"
           android:textColor="@drawable/gl_article_header_text_color"
-          android:textSize="16dp"
-          android:textStyle="bold"
-          android:background="@drawable/gl_article_header_background"/>
+          android:textSize="13dp"
+          android:textStyle="bold"/>
       <TextView
           android:id="@+id/written_comment_count"
           android:layout_width="wrap_content"
@@ -72,8 +75,7 @@
           android:gravity="center_vertical|left"
           android:text="222"
           android:textColor="@drawable/gl_article_header_text_color"
-          android:textSize="16dp"
-          android:background="@drawable/gl_article_header_background"/>
+          android:textSize="13dp"/>
 
     </LinearLayout>
 
@@ -82,7 +84,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@color/white1"
+        android:layout_marginLeft="-2dp"
+        android:background="@drawable/gl_article_type_header_background"
         android:orientation="horizontal"
         android:gravity="center">
 
@@ -95,23 +98,34 @@
           android:paddingRight="1dp"
           android:text="@string/like_article_count_txt"
           android:textColor="@drawable/gl_article_header_text_color"
-          android:textSize="16dp"
-          android:textStyle="bold"
-          android:background="@drawable/gl_article_header_background"/>
+          android:textSize="13dp"
+          android:textStyle="bold"/>
       <TextView
           android:id="@+id/like_article_count"
           android:layout_width="wrap_content"
           android:layout_height="match_parent"
           android:paddingLeft="9dp"
           android:gravity="center_vertical|left"
-          android:text="222"
           android:textColor="@drawable/gl_article_header_text_color"
-          android:textSize="16dp"
-          android:background="@drawable/gl_article_header_background"
-          android:visibility="gone"/>
+          android:textSize="13dp"/>
 
     </LinearLayout>
   </LinearLayout>
 
-  <include layout="@layout/view_divider_opacity_5"/>
+  <RelativeLayout
+      android:layout_marginTop="21dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="24dp"
+      android:layout_marginRight="24dp">
+    <include layout="@layout/view_divider"/>
+
+    <View
+        android:id="@+id/total_article_layout"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:visibility="gone"/>
+
+  </RelativeLayout>
+
 </LinearLayout>

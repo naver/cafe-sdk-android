@@ -34,6 +34,7 @@
 
   <ListView
       android:id="@+id/item_dialog_list"
+      android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:divider="@drawable/menu_list_divider"

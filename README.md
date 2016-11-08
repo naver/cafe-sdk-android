@@ -5,34 +5,18 @@
 Cafe SDK에 대하여 자세히 알고싶으시면 [네이버 CafeSDK 공식카페](http://cafe.naver.com/navercafesdk)를 참조해 주세요.
 ![Overviw](/guide/images/widget_screenshot.gif)
 
-v.1.7.2
+
+
+v.2.1.0
 -------------
-####updated
-1. 동영상 녹화 시 권한 획득을 위해 얼럿 창을 띄웁니다. (구글 피처드)
+####updated####
+1. 영어, 중국어, 일본어, 태국어 채널 지원. (2.0.0)
+2. 체널 정보 알 수 있는 메소드 제공 (2.0.1)
+3. 세로모드 지원 (2.1.0)
 
+####fixed####
+1. 알려진 버그 수정
 
-####fixed
-1. 세로모드 배너 사이즈 늘어나 보이던 이슈 수정
-2. 기타 버그 수정
-
-
-
-v.1.7.0
--------------
-####updated
-1. 위젯을 통하여 동영상 녹화 기능을 제공합니다.
-2. 콜백 API 개선 (투표 완료 리스너를 제공합니다)
-
-
-####fixed
-1. 메소드가 추가 및 변경되었습니다
-  - setGameUserId 제거 -> syncGameUserId 로 사용 권장
-  - setWidgetUse 제거 -> showWidgetWhenUnloadSDK 로 사용 권장
-  - OnPostedArticleListener 인자값 변경
-
-2. 동영상 녹화 기능 사용을 위한 권한이 추가되었습니다. (녹화를 사용할 경우 필수 권한)
-  - android.permission.WRITE_EXTERNAL_STORAGE
-  - android.permission.RECORD_AUDIO
 
 
 

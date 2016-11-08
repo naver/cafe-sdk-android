@@ -20,14 +20,22 @@
         android:textColor="@color/black2"
         android:textSize="12dp"/>
 
-      <TextView
+    <LinearLayout
         android:id="@+id/delete_history"
-        android:layout_width="wrap_content"
+        android:layout_width="40dp"
         android:layout_height="match_parent"
-        android:layout_marginRight="12dp"
-        android:layout_marginLeft="12dp"
-        android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/gl_btn_searchdelete"/>
+        android:paddingLeft="2dp"
+        android:paddingRight="12dp">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@android:color/transparent"
+          android:gravity="right"
+          android:drawableRight="@drawable/gl_btn_searchdelete"/>
+
+    </LinearLayout>
+
+
   </LinearLayout>
 
   <include layout="@layout/view_divider_opacity_5"/>
