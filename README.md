@@ -45,7 +45,7 @@ README.md   | readme 파일
 5. [google gson](http://mvnrepository.com/artifact/com.google.code.gson/gson)  (2.3.1 사용 중)
 6. [glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide)  (3.6.1 사용 중)
 7. [otto](http://mvnrepository.com/artifact/com.squareup/otto)  (1.3.8 사용 중)
-8. [hmac] (2.3.1 사용중)
+8. hmac (2.3.1 사용중)
 
 
 라이선스
