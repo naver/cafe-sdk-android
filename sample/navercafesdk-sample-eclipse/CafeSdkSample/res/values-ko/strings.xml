@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">CafeSdkSample</string>
+  <string name="action_settings">Settings</string>
+  <string name="orientation_string">가로/세로</string>
+</resources>

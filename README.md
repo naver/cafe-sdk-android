@@ -5,7 +5,10 @@
 Cafe SDK에 대하여 자세히 알고싶으시면 [네이버 CafeSDK 공식카페](http://cafe.naver.com/navercafesdk)를 참조해 주세요.
 ![Overviw](/guide/images/widget_screenshot.gif)
 
+# v.2.1.1
+####fixed####
 
+1. 처음 로그인할 경우, 오류 페이지가 노출되는 현상 수정.
 
 v.2.1.0
 -------------
@@ -46,7 +49,6 @@ README.md   | readme 파일
 6. [glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide)  (3.6.1 사용 중)
 7. [otto](http://mvnrepository.com/artifact/com.squareup/otto)  (1.3.8 사용 중)
 8. hmac (2.3.1 사용중)
-
 
 라이선스
 -------------
