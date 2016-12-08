@@ -28,7 +28,6 @@
         android:layout_alignParentBottom="true"
         android:padding="1dp"
         app:radius="5dp"
-        app:fillColor="#00c300"
         app:pageColor="@android:color/transparent"
         app:strokeColor="#ffffff"
         app:strokeWidth="1dp"/>
@@ -56,6 +55,7 @@
         android:layout_weight="1"
         android:divider="@null"
         android:dividerHeight="0dp"
+        android:theme="@android:style/Theme.Holo.Light"
         android:cacheColorHint="@android:color/transparent"/>
   </LinearLayout>
 

@@ -47,6 +47,7 @@
     <string name="image_upload_fail_message">การอัพโหลดรูปภาพล้มเหลว</string>
     <string name="internet_not_connected_error">ไม่ได้เชื่อมต่อกับอินเตอร์เน็ต\nกรุณาตรวจสอบสถานะเครือข่ายไร้สายของคุณ</string>
     <string name="join_cafe">เข้าร่วมคาเฟ่เดี๋ยวนี้!</string>
+    <string name="join_plug">플러그의 멤버가 되어보세요.</string>
     <string name="like_article_count_txt">ชอบแล้ว</string>
     <string name="logout_complete_message">คุณได้ออกจากระบบแล้ว</string>
     <string name="logout_confirm_message">ต้องการออกจากระบบหรือไม่?</string>
@@ -58,11 +59,13 @@
     <string name="movie_permission_setting_message">คุณไม่ได้รับอนุญาตให้แนบไฟล์วิดีโอ\nกรุณาตรวจสอบสิทธิ์การบันทึกในเกมซึ่งสามารถเข้าถึงได้จาก [ตั้งค่า > แอพ]</string>
     <string name="need_login">กรุณาเข้าสู่ระบบ</string>
     <string name="network_error">ไม่ได้เชื่อมต่อ เนื่องจากปัญหาเครือข่ายบ\nกรุณาตรวจสอบสถานะเครือข่ายของคุณและลองใหม่อีกครั้ง</string>
-    <string name="nick_name_already_join">เข้าร่วมเสร็จเรียบร้อยแล้ว คุณกำลังอยู่ในระหว่างรอการอนุมัติ</string>
+    <string name="nick_name_already_join">คุณได้รับการร้องขอให้เข้าร่วมคอมมิวนิตี้นี้แล้ว
+    ขณะนี้คุณอยู่ในขั้นตอนการอนุมัติ
+  </string>
     <string name="nick_name_header">ใส่ชื่อเล่น</string>
     <string name="nick_name_hint">ใส่ชื่อเล่นของคุณ</string>
     <string name="nick_name_join">เข้าร่วม</string>
-    <string name="nick_name_join_agree">คุณจะต้องยอมรับเงื่อนไขการไช้งาน NAVER Cafe</string>
+    <string name="nick_name_join_agree">คุณจะต้องยอมรับเงื่อนไขการไช้งาน</string>
     <string name="nick_name_validate">คุณสามารถใส่ได้ไม่เกิน 10 ตัวอักษรภาษาเกาหลี หรือ 20 ตัวเลขผสมตัวอักษร</string>
     <string name="nickname_rule_global_message">Up to 20 characters</string>
     <string name="nickname_rule_message">สูงสุด 10 ตัวอักษรภาษาเกาหลี หรือ 20 ตัวอักษรภาษาอังกฤษ (สามารถใช้ผสมกันได้ทั้งตัวเลขและตัวอักษร)</string>
@@ -73,9 +76,13 @@
     <string name="not_cafe_member">ไม่ใช่สมาชิกของคาเฟ่นี้อีกต่อไป</string>
     <string name="not_configured_event_menu_id">เมนูกิจกรรมยังไม่ได้รับการตั้งค่า</string>
     <string name="not_configured_notice_menu_id">เมนูแจ้งเตือนยังไม่ได้รับการตั้งค่า</string>
+    <string name="photo_album">อัลบั้มรูปภาพ</string>
+    <string name="photo_upload_error">การอัพโหลดรูปภาพล้มเหลว</string>
     <string name="profile_become_member">เมื่อเข้าสู่ระบบ จะถือว่าคุณเป็นสมาชิกของคาเฟ่นี้</string>
     <string name="profile_cafe_information">พื้นที่สำหรับโมบายเกมจากทั่วทุกมุมโลก</string>
     <string name="profile_logout">ออกจากระบบ</string>
+    <string name="profile_plug_information">세상의 모든 모바일 게임을 위한 커뮤니티, 플러그</string>
+    <string name="profile_string">โปรไฟล์ของฉัน</string>
     <string name="profile_visit">เยี่ยมชม</string>
     <string name="recent_article_menu">ดูโพสต์ใหม่</string>
     <string name="record_error">วิดีโอยังไม่ได้รับการบันทึก</string>
@@ -91,7 +98,7 @@
     <string name="record_size_720">720p</string>
     <string name="replies_more_view">ดู %1d การตอบกลับ</string>
     <string name="reply">ตอบกลับ</string>
-    <string name="require_join_message">คุณจะต้องสมัครเข้าร่วมคาเฟ่</string>
+    <string name="require_join_message">คุณได้รับการร้องขอให้เข้าร่วมคอมมิวนิตี้</string>
     <string name="require_login_message">กรุณาเข้าสู่ระบบ NAVER</string>
     <string name="retry">ลองใหม่</string>
     <string name="retry_after_a_while_message">กรุณาลองใหม่อีกครั้งภายหลัง</string>
@@ -113,11 +120,11 @@
     <string name="version">เวอร์ชั่นปัจจุบัน %s</string>
     <string name="waiting_join_apply_message">กำลังเข้าร่วมคาเฟ่...</string>
     <string name="want_cafe_member">ต้องการเข้าร่วมคาเฟ่นี้หรือไม่?</string>
-    <string name="widget_button_cafe">เกมคาเฟ่</string>
+    <string name="widget_button_cafe">คอมมิวนิตี้</string>
     <string name="widget_button_capture">แคปเจอร์หน้าจอ</string>
     <string name="widget_button_record">บันทึกวิดีโอ</string>
     <string name="widget_button_write">โพสต์</string>
-    <string name="widget_trash">แตะที่ไอคอนเกมคาเฟ่เพื่อกู้คืน</string>
+    <string name="widget_trash">แตะที่ไอคอนคอมมิวนิตี้ เพื่อกู้คืน</string>
     <string name="write_permission_error">คุณไม่ได้รับอนุญาตให้เขียนโพสต์ลงในกระดานนี้</string>
     <string name="written_comment_count_txt">แสดงความคิดเห็นแล้ว</string>
 </resources>

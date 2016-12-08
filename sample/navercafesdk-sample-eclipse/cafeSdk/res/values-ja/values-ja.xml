@@ -47,6 +47,7 @@
     <string name="image_upload_fail_message">画像をアップロードできませんでした。</string>
     <string name="internet_not_connected_error">インターネットに接続していません。\nワイヤレスネットワーク接続の状態を確認してください。</string>
     <string name="join_cafe">Cafeの会員になってみませんか？</string>
+    <string name="join_plug">成为PLUG的成员吧。</string>
     <string name="like_article_count_txt">いいね</string>
     <string name="logout_complete_message">ログアウトしました。</string>
     <string name="logout_confirm_message">ログアウトしますか？</string>
@@ -58,11 +59,11 @@
     <string name="movie_permission_setting_message">権限がないため動画を添付できません。\n[設定＞アプリ]にてゲームの保存権限を確認してください</string>
     <string name="need_login">ログインしてください。</string>
     <string name="network_error">ネットワークに問題があるため接続できませんでした。\nネットワーク接続を確認してもう一度お試しください。</string>
-    <string name="nick_name_already_join">すでに入会を申し込んだCafeです。ただいま入会承認手続き中です。</string>
+    <string name="nick_name_already_join">已申请加入的社区。现在正在进行加入批准步骤。</string>
     <string name="nick_name_header">ニックネーム入力</string>
     <string name="nick_name_hint">ニックネームを入力してください。</string>
     <string name="nick_name_join">入会する</string>
-    <string name="nick_name_join_agree">NAVER Cafe利用規約に同意します。</string>
+    <string name="nick_name_join_agree">请同意使用条款。</string>
     <string name="nick_name_validate">最大20byteまで入力できます。</string>
     <string name="nickname_rule_global_message">Up to 20 characters</string>
     <string name="nickname_rule_message">最大20byteまで入力できます。</string>
@@ -73,9 +74,13 @@
     <string name="not_cafe_member">このユーザーは退会しています。</string>
     <string name="not_configured_event_menu_id">イベントメニューが設定されていません。</string>
     <string name="not_configured_notice_menu_id">お知らせメニューが設定されていません。</string>
+    <string name="photo_album">相册</string>
+    <string name="photo_upload_error">无法上传照片。</string>
     <string name="profile_become_member">ログインすると自動的にこのCafeのメンバーになります。</string>
     <string name="profile_cafe_information">この世のすべてのモバイルゲームのためのコミュニティ, NAVER Cafe</string>
     <string name="profile_logout">ログアウト</string>
+    <string name="profile_plug_information">为了世界上所有手机游戏的社区，PLUG</string>
+    <string name="profile_string">マイプロフィール</string>
     <string name="profile_visit">訪問</string>
     <string name="recent_article_menu">新しい記事を見る</string>
     <string name="record_error">動画を正常に録画できませんでした。</string>
@@ -91,7 +96,7 @@
     <string name="record_size_720">720p</string>
     <string name="replies_more_view">以前の返信%1d件表示</string>
     <string name="reply">返信</string>
-    <string name="require_join_message">Cafe入会が必要です。</string>
+    <string name="require_join_message">请加入社区。</string>
     <string name="require_login_message">NAVER IDでログインしてください。</string>
     <string name="retry">再試行</string>
     <string name="retry_after_a_while_message">しばらくしてからもう一度お試しください。</string>
@@ -113,11 +118,11 @@
     <string name="version">現在バージョン %s</string>
     <string name="waiting_join_apply_message">入会申請中です。</string>
     <string name="want_cafe_member">会員登録しますか？</string>
-    <string name="widget_button_cafe">ゲームCafe</string>
+    <string name="widget_button_cafe">游戏社区</string>
     <string name="widget_button_capture">スクリーンキャプチャ</string>
     <string name="widget_button_record">映像録画</string>
     <string name="widget_button_write">投稿</string>
-    <string name="widget_trash">ゲームCafeアイコンをタップすると復元されます。</string>
+    <string name="widget_trash">点击社区图标即可恢复。</string>
     <string name="write_permission_error">掲示板の書き込み権限がありません。</string>
     <string name="written_comment_count_txt">コメント</string>
 </resources>

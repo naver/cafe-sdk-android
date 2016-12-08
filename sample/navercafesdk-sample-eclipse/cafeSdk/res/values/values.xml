@@ -28,6 +28,7 @@
     <color name="default_title_indicator_text_color">#BBFFFFFF</color>
     <color name="default_underline_indicator_selected_color">#FF33B5E5</color>
     <color name="gray1">#cccccc</color>
+    <color name="gray10">#aaaaaa</color>
     <color name="gray2">#c1c1c1</color>
     <color name="gray3">#c7c8ca</color>
     <color name="gray4">#999999</color>
@@ -35,6 +36,7 @@
     <color name="gray6">#d8d8d8</color>
     <color name="gray7">#666666</color>
     <color name="gray8">#e6777777</color>
+    <color name="gray9">#d5d5d5</color>
     <color name="green1">#00C73C</color>
     <color name="green1_10">#5b00C73C</color>
     <color name="list_selector_color">#e9ecef</color>
@@ -49,10 +51,37 @@
     <color name="white2">#f8f8f8</color>
     <color name="white3">#f2f2f2</color>
     <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
-    <declare-styleable name="FloatingActionButton"><attr format="color" name="fab_colorNormal"/><attr format="color" name="fab_colorPressed"/><attr format="color" name="fab_colorDisabled"/><attr format="color" name="fab_colorRipple"/><attr format="boolean" name="fab_showShadow"/><attr format="color" name="fab_shadowColor"/><attr format="dimension" name="fab_shadowRadius"/><attr format="dimension" name="fab_shadowXOffset"/><attr format="dimension" name="fab_shadowYOffset"/><attr format="enum" name="fab_size"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr format="reference" name="fab_showAnimation"/><attr format="reference" name="fab_hideAnimation"/><attr format="string" name="fab_label"/><attr format="dimension" name="fab_elevationCompat"/><attr format="color" name="fab_progress_color"/><attr format="color" name="fab_progress_backgroundColor"/><attr format="boolean" name="fab_progress_indeterminate"/><attr format="integer" name="fab_progress_max"/><attr format="integer" name="fab_progress"/><attr format="boolean" name="fab_progress_showBackground"/></declare-styleable>
-    <declare-styleable name="FloatingActionMenu"><attr format="boolean" name="menu_showShadow"/><attr format="dimension" name="menu_buttonSpacing"/><attr format="dimension" name="menu_labels_margin"/><attr format="reference" name="menu_labels_showAnimation"/><attr format="reference" name="menu_labels_hideAnimation"/><attr format="dimension" name="menu_labels_paddingTop"/><attr format="dimension" name="menu_labels_paddingLeft"/><attr format="dimension" name="menu_labels_paddingRight"/><attr format="dimension" name="menu_labels_paddingBottom"/><attr format="dimension" name="menu_labels_padding"/><attr format="reference|color" name="menu_labels_textColor"/><attr format="dimension" name="menu_labels_textSize"/><attr format="dimension" name="menu_labels_cornerRadius"/><attr format="boolean" name="menu_labels_showShadow"/><attr format="color" name="menu_labels_colorNormal"/><attr format="color" name="menu_labels_colorPressed"/><attr format="color" name="menu_labels_colorRipple"/><attr format="enum" name="menu_labels_position"><enum name="left" value="0"/><enum name="right" value="1"/></attr><attr format="reference" name="menu_icon"/><attr format="integer" name="menu_animationDelayPerItem"/><attr format="reference" name="menu_buttonToggleAnimation"/><attr format="boolean" name="menu_labels_singleLine"/><attr format="enum" name="menu_labels_ellipsize"><enum name="none" value="0"/><enum name="start" value="1"/><enum name="middle" value="2"/><enum name="end" value="3"/><enum name="marquee" value="4"/></attr><attr format="integer" name="menu_labels_maxLines"/><attr format="enum" name="menu_fab_size"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr format="reference" name="menu_labels_style"/><attr format="color" name="menu_shadowColor"/><attr format="dimension" name="menu_shadowRadius"/><attr format="dimension" name="menu_shadowXOffset"/><attr format="dimension" name="menu_shadowYOffset"/><attr format="color" name="menu_colorNormal"/><attr format="color" name="menu_colorPressed"/><attr format="color" name="menu_colorRipple"/><attr format="enum" name="menu_openDirection"><enum name="up" value="0"/><enum name="down" value="1"/><enum name="left" value="2"/><enum name="right" value="3"/></attr><attr format="color" name="menu_backgroundColor"/><attr format="string" name="menu_fab_label"/><attr format="reference" name="menu_fab_show_animation"/><attr format="reference" name="menu_fab_hide_animation"/></declare-styleable>
+    <declare-styleable name="FloatingActionButton"><attr format="color" name="fab_colorNormal"/><attr format="color" name="fab_colorPressed"/><attr format="color" name="fab_colorDisabled"/><attr format="color" name="fab_colorRipple"/><attr format="boolean" name="fab_showShadow"/><attr format="color" name="fab_shadowColor"/><attr format="dimension" name="fab_shadowRadius"/><attr format="dimension" name="fab_shadowXOffset"/><attr format="dimension" name="fab_shadowYOffset"/><attr format="enum" name="fab_size">
+      <enum name="normal" value="0"/>
+      <enum name="mini" value="1"/>
+    </attr><attr format="reference" name="fab_showAnimation"/><attr format="reference" name="fab_hideAnimation"/><attr format="string" name="fab_label"/><attr format="dimension" name="fab_elevationCompat"/><attr format="color" name="fab_progress_color"/><attr format="color" name="fab_progress_backgroundColor"/><attr format="boolean" name="fab_progress_indeterminate"/><attr format="integer" name="fab_progress_max"/><attr format="integer" name="fab_progress"/><attr format="boolean" name="fab_progress_showBackground"/></declare-styleable>
+    <declare-styleable name="FloatingActionMenu"><attr format="boolean" name="menu_showShadow"/><attr format="dimension" name="menu_buttonSpacing"/><attr format="dimension" name="menu_labels_margin"/><attr format="reference" name="menu_labels_showAnimation"/><attr format="reference" name="menu_labels_hideAnimation"/><attr format="dimension" name="menu_labels_paddingTop"/><attr format="dimension" name="menu_labels_paddingLeft"/><attr format="dimension" name="menu_labels_paddingRight"/><attr format="dimension" name="menu_labels_paddingBottom"/><attr format="dimension" name="menu_labels_padding"/><attr format="reference|color" name="menu_labels_textColor"/><attr format="dimension" name="menu_labels_textSize"/><attr format="dimension" name="menu_labels_cornerRadius"/><attr format="boolean" name="menu_labels_showShadow"/><attr format="color" name="menu_labels_colorNormal"/><attr format="color" name="menu_labels_colorPressed"/><attr format="color" name="menu_labels_colorRipple"/><attr format="enum" name="menu_labels_position">
+      <enum name="left" value="0"/>
+      <enum name="right" value="1"/>
+    </attr><attr format="reference" name="menu_icon"/><attr format="integer" name="menu_animationDelayPerItem"/><attr format="reference" name="menu_buttonToggleAnimation"/><attr format="boolean" name="menu_labels_singleLine"/><attr format="enum" name="menu_labels_ellipsize">
+      <enum name="none" value="0"/>
+      <enum name="start" value="1"/>
+      <enum name="middle" value="2"/>
+      <enum name="end" value="3"/>
+      <enum name="marquee" value="4"/>
+    </attr><attr format="integer" name="menu_labels_maxLines"/><attr format="enum" name="menu_fab_size">
+      <enum name="normal" value="0"/>
+      <enum name="mini" value="1"/>
+    </attr><attr format="reference" name="menu_labels_style"/><attr format="color" name="menu_shadowColor"/><attr format="dimension" name="menu_shadowRadius"/><attr format="dimension" name="menu_shadowXOffset"/><attr format="dimension" name="menu_shadowYOffset"/><attr format="color" name="menu_colorNormal"/><attr format="color" name="menu_colorPressed"/><attr format="color" name="menu_colorRipple"/><attr format="enum" name="menu_openDirection">
+      <enum name="up" value="0"/>
+      <enum name="down" value="1"/>
+      <enum name="left" value="2"/>
+      <enum name="right" value="3"/>
+    </attr><attr format="color" name="menu_backgroundColor"/><attr format="string" name="menu_fab_label"/><attr format="reference" name="menu_fab_show_animation"/><attr format="reference" name="menu_fab_hide_animation"/></declare-styleable>
     <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
-    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle"><enum name="none" value="0"/><enum name="triangle" value="1"/><enum name="underline" value="2"/></attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition"><enum name="bottom" value="0"/><enum name="top" value="1"/></attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle">
+      <enum name="none" value="0"/>
+      <enum name="triangle" value="1"/>
+      <enum name="underline" value="2"/>
+    </attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition">
+      <enum name="bottom" value="0"/>
+      <enum name="top" value="1"/>
+    </attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
     <dimen name="activity_horizontal_margin">16dp</dimen>
@@ -129,10 +158,19 @@
     <string name="error_no_article_like">No posts you have liked on.</string>
     <string name="error_no_article_wirte">No posts you have written.</string>
     <string name="exist_prohibit_word_nickname_message">Prohibited words are included.</string>
+    <string name="flavor_name" translatable="false">real</string>
+    <string name="hosts_article" translatable="false">http://openapi.naver.com</string>
+    <string name="hosts_attach" translatable="false">https://up.cafe.naver.com</string>
+    <string name="hosts_glink" translatable="false">https://openapi.naver.com</string>
+    <string name="hosts_phinf" translatable="false">https://g-plug.pstatic.net</string>
+    <string name="hosts_playlog" translatable="false">http://global.apis.naver.com</string>
+    <string name="hosts_plug" translatable="false">https://global.apis.naver.com</string>
+    <string name="hosts_upphoto" translatable="false">https://g-public2.upphoto.naver.com</string>
     <string name="image_permission_setting_message">You do not have permission to attach an image.\nPlease check your permission to save in the game which can be accessed from [Settings > App].</string>
     <string name="image_upload_fail_message">Uploading an image failed.</string>
     <string name="internet_not_connected_error">Not connected to Internet.\nPlease check your wireless network status.</string>
     <string name="join_cafe">Join the Cafe now!</string>
+    <string name="join_plug">Join the PLUG now!</string>
     <string name="like_article_count_txt">Liked</string>
     <string name="logout_complete_message">You have been logged out.</string>
     <string name="logout_confirm_message">Are you going to log out?</string>
@@ -144,11 +182,13 @@
     <string name="movie_permission_setting_message">You do not have permission to attach a video.\nPlease check your permission to save in the game which can be accessed from [Settings > App]. </string>
     <string name="need_login">Please log in.</string>
     <string name="network_error">Not connected due to a network problem.\nPlease check your network status and then try again.</string>
-    <string name="nick_name_already_join">You have already done. You are currently undergoing the approval process.</string>
+    <string name="nick_name_already_join">You\'ve already asked to join this community. You are
+    currently undergoing the approval process.
+  </string>
     <string name="nick_name_header">Enter Nickname</string>
     <string name="nick_name_hint">Enter your nickname.</string>
     <string name="nick_name_join">Join</string>
-    <string name="nick_name_join_agree">You must agree to NAVER Cafe Terms of Use.</string>
+    <string name="nick_name_join_agree">You must agree to Terms of Use.</string>
     <string name="nick_name_validate">You can enter no more than 10 Korean characters or 20 alphanumeric characters.</string>
     <string name="nickname_rule_global_message">Up to 20 characters</string>
     <string name="nickname_rule_message">Maximum of 10 Korean characters or 20 English characters (alphanumeric characters allowed)</string>
@@ -159,9 +199,15 @@
     <string name="not_cafe_member">Not a member of the Cafe anymore.</string>
     <string name="not_configured_event_menu_id">The Events menu has not been set.</string>
     <string name="not_configured_notice_menu_id">The Notices menu has not been set.</string>
+    <string name="photo_album">Photo Albums</string>
+    <string name="photo_upload_error">Uploading a photo failed.</string>
+    <string name="plug_sdk_version" translatable="false">2.2.0</string>
     <string name="profile_become_member">By logging in, you become a member of this Cafe.</string>
     <string name="profile_cafe_information">Community for every mobile game around the world, NAVER Cafe</string>
     <string name="profile_logout">Log Out</string>
+    <string name="profile_plug_information">A community for every mobile game around the world, PLUG
+  </string>
+    <string name="profile_string">My Profile</string>
     <string name="profile_visit">Visit</string>
     <string name="recent_article_menu">View New Posts</string>
     <string name="record_error">The video has not been successfully recorded.</string>
@@ -177,7 +223,7 @@
     <string name="record_size_720">720p</string>
     <string name="replies_more_view">View %1d replies</string>
     <string name="reply">Reply</string>
-    <string name="require_join_message">You are required to join a Cafe.</string>
+    <string name="require_join_message">You are required to join a community.</string>
     <string name="require_login_message">Please log in with NAVER.</string>
     <string name="retry">Retry</string>
     <string name="retry_after_a_while_message">Please try again later.</string>
@@ -199,11 +245,11 @@
     <string name="version">Current version %s</string>
     <string name="waiting_join_apply_message">Waiting for joining the Cafe…</string>
     <string name="want_cafe_member">Do you want to join the Cafe?</string>
-    <string name="widget_button_cafe">Game Cafe</string>
+    <string name="widget_button_cafe">Community</string>
     <string name="widget_button_capture">Capture Screen</string>
     <string name="widget_button_record">Record Video</string>
     <string name="widget_button_write">Post</string>
-    <string name="widget_trash">Tapping the Game Cafe icon will restore it.</string>
+    <string name="widget_trash">Tapping the community icon will restore it.</string>
     <string name="write_permission_error">You do not have permission to publish a post in this forum.</string>
     <string name="written_comment_count_txt">Commented</string>
     <style name="Glink.SeekBar" parent="android:Widget.SeekBar">
@@ -211,6 +257,7 @@
     <item name="android:paddingRight">16dip</item>
     <item name="android:thumbOffset">8dip</item>
     <item name="android:layout_marginLeft">0dip</item>
+    <item name="android:theme">@style/Theme.glink.seekbar</item>
     <item name="android:thumb">@drawable/seekbar_control_selector</item>
     <item name="android:progressDrawable">@drawable/seekbar_progress_background</item>
     <item name="android:indeterminateOnly">false</item>
@@ -218,6 +265,9 @@
     <item name="android:maxHeight">13dip</item>
     <item name="android:minWidth">103dip</item>
     <item name="android:focusable">true</item>
+  </style>
+    <style name="Theme.glink.seekbar" parent="@android:style/Theme.Black">
+
   </style>
     <style name="notitle_defaultdialog_msg" parent="@android:style/Theme.Holo.Light.Dialog">
     <item name="android:background">@android:color/transparent</item>

@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import com.naver.glink.android.sdk.Glink;
-import com.naver.glink.android.sdk.model.LanguageCode;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -36,7 +35,7 @@ public class MainActivity extends Activity {
      */
     final int globalCafeId = 1013329;
     final String neoIdConsumerKey = "IHCd_HmSiMcXOMC37xZ8";
-    final String defaultChannel = LanguageCode.ENGLISH.getCode();
+    final String defaultChannel = "";
 
     //국내 카페 초기화
     Glink.init(this, clientId, clientSecret, cafeId);

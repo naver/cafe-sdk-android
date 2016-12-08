@@ -18,8 +18,7 @@
           android:id="@+id/cafe_background_img"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-          android:scaleType="centerCrop"
-          android:background="@color/green1"/>
+          android:scaleType="centerCrop"/>
 
       <FrameLayout
           android:id="@+id/thumbnail_image"
@@ -91,7 +90,6 @@
           android:layout_marginLeft="22dp"
           android:layout_marginRight="22dp"
           android:layout_marginBottom="22dp"
-          android:src="@drawable/gl_with_naver_cafe_white"
           android:layout_alignParentBottom="true"/>
 
 
@@ -114,36 +112,36 @@
           android:layout_height="wrap_content"
           android:orientation="vertical">
 
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/join_cafe"
-          android:textStyle="bold"
-          android:textColor="@color/black1"
-          android:textSize="24dp"/>
+        <TextView
+            android:id="@+id/join_cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/join_cafe"
+            android:textStyle="bold"
+            android:textColor="@color/black1"
+            android:textSize="24dp"/>
 
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="12dp"
-          android:layout_marginRight="22dp"
-          android:text="@string/profile_cafe_information"
-          android:textColor="@color/black1"
-          android:textSize="12dp"/>
+        <TextView
+            android:id="@+id/profile_cafe_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="22dp"
+            android:text="@string/profile_cafe_information"
+            android:textColor="@color/black1"
+            android:textSize="12dp"/>
       </LinearLayout>
 
       <Button
           android:id="@+id/btn_login"
           android:layout_width="match_parent"
-          android:layout_height="36dp"
+          android:layout_height="38dp"
           android:layout_marginTop="19dp"
           android:layout_marginBottom="22dp"
           android:text="Log in"
           android:textStyle="bold"
-          android:textColor="@color/green1"
           android:gravity="center"
           android:layout_alignParentBottom="true"
-          android:background="@drawable/gl_profile_cafe_info_login"
           android:textSize="15dp"/>
 
     </RelativeLayout>

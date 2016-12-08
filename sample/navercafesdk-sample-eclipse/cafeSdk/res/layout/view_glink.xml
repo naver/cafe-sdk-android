@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
+
       <com.naver.glink.android.sdk.ui.widget.TransparentGlinkLayout
           android:id="@+id/transparent_glink"
           android:layout_width="wrap_content"
@@ -79,6 +80,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_alignLeft="@+id/transparent_glink"
+          android:layout_alignRight="@+id/transparent_glink"
           android:layout_marginRight="22dp"
           android:layout_marginLeft="22dp">
         <Button

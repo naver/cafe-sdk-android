@@ -20,7 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/gl_article_type_header_background"
         android:orientation="horizontal"
         android:gravity="center">
 
@@ -52,7 +51,6 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_marginLeft="-2dp"
-        android:background="@drawable/gl_article_type_header_background"
         android:orientation="horizontal"
         android:gravity="center">
 
@@ -85,7 +83,6 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_marginLeft="-2dp"
-        android:background="@drawable/gl_article_type_header_background"
         android:orientation="horizontal"
         android:gravity="center">
 

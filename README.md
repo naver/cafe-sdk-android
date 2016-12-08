@@ -5,18 +5,13 @@
 Cafe SDK에 대하여 자세히 알고싶으시면 [네이버 CafeSDK 공식카페](http://cafe.naver.com/navercafesdk)를 참조해 주세요.
 ![Overviw](/guide/images/widget_screenshot.gif)
 
-# v.2.1.1
-####fixed####
-
-1. 처음 로그인할 경우, 오류 페이지가 노출되는 현상 수정.
-
-v.2.1.0
+v.2.2.0
 -------------
 ####updated####
-1. 영어, 중국어, 일본어, 태국어 채널 지원. (2.0.0)
-2. 체널 정보 알 수 있는 메소드 제공 (2.0.1)
-3. 세로모드 지원 (2.1.0)
-4. hmac 라이브러리 추가
+1. PLUG에 테마 color 적용 가능
+2. PLUG 접기 기능 추가
+3. 프로필 사진 업데이트 기능 추가
+4. default channel이 device 지정 언어에 따라가도록 변경
 
 ####fixed####
 1. 알려진 버그 수정

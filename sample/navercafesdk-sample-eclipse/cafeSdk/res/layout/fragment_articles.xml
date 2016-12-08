@@ -32,7 +32,9 @@
             android:divider="@null"
             android:dividerHeight="0dp"
             android:listSelector="@drawable/gl_list_selector"
-            android:cacheColorHint="@android:color/transparent"/>
+            android:cacheColorHint="@android:color/transparent"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:choiceMode="singleChoice"/>
       </android.support.v4.widget.SwipeRefreshLayout>
     </LinearLayout>
 
@@ -70,17 +72,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginRight="12dp">
 
-      <TextView
-          android:id="@+id/article_write"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:background="@drawable/gl_btn_flwrite"/>
-
-      <TextView
-          android:id="@+id/search"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:background="@drawable/gl_btn_flsearch"/>
+      <include android:id="@+id/article_write" layout="@layout/view_floating_button"/>
+      <include android:id="@+id/search" layout="@layout/view_floating_button"/>
     </LinearLayout>
   </RelativeLayout>
 

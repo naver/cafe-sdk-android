@@ -10,7 +10,7 @@
       android:layout_height="wrap_content"
       android:layout_marginBottom="8dp">
 
-      <TextView
+    <TextView
         android:id="@+id/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,21 +18,20 @@
         android:background="@drawable/gl_btn_boardcancel"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
-          android:gravity="center"
-          android:text="@string/cancel"
+        android:gravity="center"
+        android:text="@string/cancel"
         android:textColor="@color/gray4"
         android:textSize="14dp"/>
 
-      <TextView
-        android:id="@+id/join"
+    <TextView
+        android:id="@+id/save"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="27dp"
         android:layout_alignParentRight="true"
-        android:background="@drawable/gl_btn_boardconfirm"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
-          android:gravity="center"
-          android:text="@string/save"
+        android:gravity="center"
+        android:text="@string/save"
         android:textColor="@color/white1"
         android:textSize="14dp"/>
   </RelativeLayout>

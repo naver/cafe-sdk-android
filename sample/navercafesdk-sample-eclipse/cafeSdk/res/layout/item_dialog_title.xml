@@ -40,5 +40,7 @@
       android:divider="@drawable/menu_list_divider"
       android:dividerHeight="1dp"
       android:background="@android:color/white"
+      android:scrollbarThumbVertical="@color/black2_opacity_20"
+      android:scrollbarSize="4dp"
       android:cacheColorHint="@android:color/transparent"/>
 </LinearLayout>

@@ -47,6 +47,7 @@
     <string name="image_upload_fail_message">이미지를 업로드할 수 없습니다.</string>
     <string name="internet_not_connected_error">인터넷에 연결되어 있지 않습니다.\n무선 인터넷 연결 상태를 확인해 주세요.</string>
     <string name="join_cafe">카페의 멤버가 되어 보세요.</string>
+    <string name="join_plug">플러그의 멤버가 되어보세요.</string>
     <string name="like_article_count_txt">좋아요</string>
     <string name="logout_complete_message">로그아웃 되었습니다.</string>
     <string name="logout_confirm_message">로그아웃하시겠습니까?</string>
@@ -58,11 +59,11 @@
     <string name="movie_permission_setting_message">권한이 없어 동영상을 첨부할 수 없습니다.\n[설정 > 앱]의 해당 게임에서 저장 권한을 확인해 주세요.</string>
     <string name="need_login">로그인하세요.</string>
     <string name="network_error">네트워크 문제로 연결되지 않았습니다.\n네트워크 연결을 확인한 후 다시 시도해 주세요.</string>
-    <string name="nick_name_already_join">이미 가입을 신청한 카페입니다. 현재 가입 승인 절차가 진행 중입니다.</string>
+    <string name="nick_name_already_join">이미 가입을 신청한 커뮤니티입니다. 현재 가입 승인 절차가 진행 중입니다.</string>
     <string name="nick_name_header">별명 입력</string>
     <string name="nick_name_hint">별명을 입력하세요.</string>
     <string name="nick_name_join">가입하기</string>
-    <string name="nick_name_join_agree">네이버 카페 이용약관에 동의합니다.</string>
+    <string name="nick_name_join_agree">이용약관에 동의해 주세요.</string>
     <string name="nick_name_validate">10자 이내의 한글 또는 20자 이내의 영문과 숫자를 사용할 수 있습니다.</string>
     <string name="nickname_rule_global_message">최대 20자</string>
     <string name="nickname_rule_message">최대 한글 10자, 영문 20자(숫자 혼용가능)</string>
@@ -73,9 +74,13 @@
     <string name="not_cafe_member">탈퇴한 멤버입니다.</string>
     <string name="not_configured_event_menu_id">이벤트 메뉴가 설정되지 않았습니다.</string>
     <string name="not_configured_notice_menu_id">공지 사항 메뉴가 설정되지 않았습니다.</string>
+    <string name="photo_album">사진 앨범</string>
+    <string name="photo_upload_error">사진을 등록할 수 없습니다.</string>
     <string name="profile_become_member">로그인하면 자동으로 이 카페의 멤버가 됩니다.</string>
     <string name="profile_cafe_information">세상의 모든 모바일 게임을 위한 커뮤니티, NAVER Cafe</string>
     <string name="profile_logout">로그아웃</string>
+    <string name="profile_plug_information">세상의 모든 모바일 게임을 위한 커뮤니티, 플러그</string>
+    <string name="profile_string">내 프로필</string>
     <string name="profile_visit">방문</string>
     <string name="recent_article_menu">새 글 보기</string>
     <string name="record_error">동영상이 정상적으로 녹화되지 않았습니다.</string>
@@ -91,7 +96,7 @@
     <string name="record_size_720">720p</string>
     <string name="replies_more_view">이전 답글 %d개 보기..</string>
     <string name="reply">답글</string>
-    <string name="require_join_message">카페에 가입해야 합니다.</string>
+    <string name="require_join_message">커뮤니티에 가입해 주세요.</string>
     <string name="require_login_message">네이버 아이디로 로그인해 주세요.</string>
     <string name="retry">재시도</string>
     <string name="retry_after_a_while_message">잠시 후 다시 시도해 주세요.</string>
@@ -113,11 +118,11 @@
     <string name="version">현재 버전 %s</string>
     <string name="waiting_join_apply_message">가입 신청 중입니다.</string>
     <string name="want_cafe_member">회원으로 가입하시겠습니까?</string>
-    <string name="widget_button_cafe">게임카페</string>
+    <string name="widget_button_cafe">커뮤니티</string>
     <string name="widget_button_capture">화면캡쳐</string>
     <string name="widget_button_record">영상녹화</string>
     <string name="widget_button_write">글쓰기</string>
-    <string name="widget_trash">게임 카페 아이콘을 누르면 복구됩니다</string>
+    <string name="widget_trash">커뮤니티 아이콘을 누르면 복구됩니다</string>
     <string name="write_permission_error">해당 게시판에 글쓰기 권한이 없습니다.</string>
     <string name="written_comment_count_txt">댓글 단 글</string>
 </resources>

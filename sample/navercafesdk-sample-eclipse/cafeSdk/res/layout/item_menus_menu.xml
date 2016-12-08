@@ -10,7 +10,6 @@
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_centerVertical="true"
-      android:textColor="@color/menu_item_color"
       android:textSize="15dp"
       android:ellipsize="end"
       android:maxLines="1"/>
@@ -25,11 +24,11 @@
       android:src="@drawable/gl_icon_menu_new"/>
 
   <ImageView
+      android:id="@+id/disclosure_icon"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_alignParentRight="true"
-      android:layout_centerVertical="true"
-      android:src="@drawable/gl_ls_boards_btn_move"/>
+      android:layout_centerVertical="true"/>
 
   <View
       android:layout_width="match_parent"

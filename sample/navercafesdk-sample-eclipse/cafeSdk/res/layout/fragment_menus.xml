@@ -14,6 +14,9 @@
       android:divider="@null"
       android:dividerHeight="0dp"
       android:listSelector="@drawable/gl_list_selector"
+      android:scrollbarThumbVertical="@color/black2_opacity_20"
+      android:scrollbarSize="4dp"
+      android:theme="@android:style/Theme.Holo.Light"
       android:cacheColorHint="@android:color/transparent"/>
 
   <include layout="@layout/view_fragment_error"/>

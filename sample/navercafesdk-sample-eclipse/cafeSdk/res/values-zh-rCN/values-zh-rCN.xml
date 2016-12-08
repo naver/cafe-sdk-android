@@ -47,6 +47,7 @@
     <string name="image_upload_fail_message">不能上传图片。</string>
     <string name="internet_not_connected_error">尚未连接网络。\n请检查您的无线网络连接状态。</string>
     <string name="join_cafe">请成为Cafe成员。</string>
+    <string name="join_plug">成為Plug成員。</string>
     <string name="like_article_count_txt">赞</string>
     <string name="logout_complete_message">已退出。</string>
     <string name="logout_confirm_message">确定退出？</string>
@@ -58,11 +59,11 @@
     <string name="movie_permission_setting_message">没有权限，不能添加视频。\n请在【设置 > 应用程序】的相关游戏中确认保存权限。</string>
     <string name="need_login">请登录。</string>
     <string name="network_error">出现网络问题，没有成功连接。\n请检查您的网络连接后重试。</string>
-    <string name="nick_name_already_join">已经申请注册的Cafe。正在进行注册审批。</string>
+    <string name="nick_name_already_join">請申請加入的社群。加入核准程序進行中。</string>
     <string name="nick_name_header">输入昵称</string>
     <string name="nick_name_hint">请输入昵称。</string>
     <string name="nick_name_join">注册</string>
-    <string name="nick_name_join_agree">同意Naver Cafe使用条款。</string>
+    <string name="nick_name_join_agree">請同意使用條款。</string>
     <string name="nick_name_validate">可以使用10字以内的韩文或20字以内的英文与数字。</string>
     <string name="nickname_rule_global_message">Up to 20 characters</string>
     <string name="nickname_rule_message">最多10个韩文字符，20个英文字符(可以混用数字)</string>
@@ -73,9 +74,13 @@
     <string name="not_cafe_member">已退出的成员。</string>
     <string name="not_configured_event_menu_id">尚未设置活动菜单。</string>
     <string name="not_configured_notice_menu_id">尚未设置公告菜单。</string>
+    <string name="photo_album">相簿</string>
+    <string name="photo_upload_error">無法登錄照片。</string>
     <string name="profile_become_member">登录后自动成为Cafe成员。</string>
     <string name="profile_cafe_information">为了世界上所有手机游戏的空间</string>
     <string name="profile_logout">注销</string>
+    <string name="profile_plug_information">為了世上所有手機遊戲社群「Plug」</string>
+    <string name="profile_string">我的个人资料</string>
     <string name="profile_visit">访问</string>
     <string name="recent_article_menu">查看新文章</string>
     <string name="record_error">视频没有正常录制。</string>
@@ -91,7 +96,7 @@
     <string name="record_size_720">720p</string>
     <string name="replies_more_view">查看%1d个之前跟帖</string>
     <string name="reply">回复</string>
-    <string name="require_join_message">您需要加入Cafe。</string>
+    <string name="require_join_message">請加入社群。</string>
     <string name="require_login_message">请使用Naver账号登录。</string>
     <string name="retry">重试</string>
     <string name="retry_after_a_while_message">请稍后再试。</string>
@@ -113,11 +118,11 @@
     <string name="version">当前版本 %s</string>
     <string name="waiting_join_apply_message">正在申请注册。</string>
     <string name="want_cafe_member">注册会员？</string>
-    <string name="widget_button_cafe">游戏Café</string>
+    <string name="widget_button_cafe">遊戲社群</string>
     <string name="widget_button_capture">屏幕截图</string>
     <string name="widget_button_record">视频录制</string>
     <string name="widget_button_write">写作</string>
-    <string name="widget_trash">点击游戏Cafe图标可恢复。</string>
+    <string name="widget_trash">按下社群圖示即可復原</string>
     <string name="write_permission_error">该公告栏没有写作权限。</string>
     <string name="written_comment_count_txt">发表评论的文章</string>
 </resources>

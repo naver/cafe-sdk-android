@@ -29,6 +29,7 @@
         android:divider="@null"
         android:dividerHeight="0dp"
         android:listSelector="@drawable/gl_list_selector"
+        android:theme="@android:style/Theme.Holo.Light"
         android:cacheColorHint="@android:color/transparent"/>
   </LinearLayout>
 
