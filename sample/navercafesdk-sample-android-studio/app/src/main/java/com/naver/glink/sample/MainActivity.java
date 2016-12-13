@@ -28,7 +28,6 @@ public class MainActivity extends Activity {
     final String clientId = "197CymaStozo7X5r2qR5";
     final String clientSecret = "evCgKH1kJL";
 
-
     /**
      * 제휴 이메일을 통해 신청을 하면 ConsumerKey, globalCafeId를 받을 수 있다.
      * 제휴 이메일 주소: dl_gamesdkpartner@navercorp.com
@@ -42,7 +41,6 @@ public class MainActivity extends Activity {
 
     //글로벌 카페 초기화. 국내 카페만 사용할 경우 initGlobal을 하지 않아도 됩니다
     //Glink.initGlobal(this, neoIdConsumerKey, globalCafeId, defaultChannel);
-
 
     // 게임 아이디와 카페 아이디를 매핑합니다.
     Glink.syncGameUserId(this, "id123");
@@ -109,19 +107,18 @@ public class MainActivity extends Activity {
       }
     });
 
-
     //위젯 스크린샷 버튼 클릭 리스너 설정.
     Glink.setOnWidgetScreenshotClickListener(new Glink.OnWidgetScreenshotClickListener() {
       @Override public void onScreenshotClick() {
         String path = screenshot(MainActivity.this);
-        Glink.startImageWrite(MainActivity.this, -1, "screen shot!", "스크린샷 테스트", path);
+        Glink.startImageWrite(MainActivity.this, -1, "", "", path);
       }
     });
 
     //동영상 녹화 완료 리스너 설정.
     Glink.setOnRecordFinishListener(new Glink.OnRecordFinishListener() {
       @Override public void onRecordFinished(String uri) {
-        Glink.startVideoWrite(MainActivity.this, -1, "동영상 녹화", "녹화", uri);
+        Glink.startVideoWrite(MainActivity.this, -1, "", "", uri);
       }
     });
 
@@ -162,27 +159,21 @@ public class MainActivity extends Activity {
 
     findViewById(R.id.write_button1).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        int menuId = 4; // -1이면 메뉴를 선택하지 않는다.
-        String text = "기본 제목, 본문을 넣어서 글쓰기 화면을 시작합니다.";
-        Glink.startWrite(MainActivity.this, menuId, "subject", text);
+        Glink.startWrite(MainActivity.this, -1, "", "");
       }
     });
 
     findViewById(R.id.write_button2).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        int menuId = 4; // -1이면 메뉴를 선택하지 않는다.
-        String text = "기본 제목, 본문, 이미지를 넣어서 글쓰기 화면을 시작합니다.\n이미지는 uri 형태로 넣어주시면 됩니다.";
-        String imageUri = "http://cafeimgs.naver.net/glink/img/gl_img_copyright.png";
-        Glink.startImageWrite(MainActivity.this, menuId, "subject", text, imageUri);
+        String imageUri = "file://your_image_path";
+        Glink.startImageWrite(MainActivity.this, -1, "", "", imageUri);
       }
     });
 
     findViewById(R.id.write_button3).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        int menuId = 4; // -1이면 메뉴를 선택하지 않는다.
-        String text = "기본 제목, 본문, 비디오를 넣어서 글쓰기 화면을 시작합니다.\n비디오는 uri 형태로 넣어주시면 됩니다.";
         String videoUri = "file://your_video_path";
-        Glink.startVideoWrite(MainActivity.this, menuId, "subject", text, videoUri);
+        Glink.startVideoWrite(MainActivity.this, -1, "", "", videoUri);
       }
     });
 
@@ -203,7 +194,6 @@ public class MainActivity extends Activity {
       }
     });
   }
-
 
   public String screenshot(Activity activity) {
     View view =

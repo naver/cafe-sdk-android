@@ -116,14 +116,14 @@ public class MainActivity extends Activity {
 	    Glink.setOnWidgetScreenshotClickListener(new Glink.OnWidgetScreenshotClickListener() {
 	      @Override public void onScreenshotClick() {
 	        String path = screenshot(MainActivity.this);
-	        Glink.startImageWrite(MainActivity.this, -1, "screen shot!", "스크린샷 테스트", path);
+	        Glink.startImageWrite(MainActivity.this, -1, "", "", path);
 	      }
 	    });
 
 	    //동영상 녹화 완료 리스너 설정.
 	    Glink.setOnRecordFinishListener(new Glink.OnRecordFinishListener() {
 	      @Override public void onRecordFinished(String uri) {
-	        Glink.startVideoWrite(MainActivity.this, -1, "동영상 녹화", "녹화", uri);
+	        Glink.startVideoWrite(MainActivity.this, -1, "", "", uri);
 	      }
 	    });
 
@@ -164,27 +164,21 @@ public class MainActivity extends Activity {
 
 	    findViewById(R.id.write_button1).setOnClickListener(new View.OnClickListener() {
 	      @Override public void onClick(View v) {
-	        int menuId = 4; // -1이면 메뉴를 선택하지 않는다.
-	        String text = "기본 제목, 본문을 넣어서 글쓰기 화면을 시작합니다.";
-	        Glink.startWrite(MainActivity.this, menuId, "subject", text);
+	        Glink.startWrite(MainActivity.this, -1, "", "");
 	      }
 	    });
 
 	    findViewById(R.id.write_button2).setOnClickListener(new View.OnClickListener() {
 	      @Override public void onClick(View v) {
-	        int menuId = 4; // -1이면 메뉴를 선택하지 않는다.
-	        String text = "기본 제목, 본문, 이미지를 넣어서 글쓰기 화면을 시작합니다.\n이미지는 uri 형태로 넣어주시면 됩니다.";
-	        String imageUri = "http://cafeimgs.naver.net/glink/img/gl_img_copyright.png";
-	        Glink.startImageWrite(MainActivity.this, menuId, "subject", text, imageUri);
+	        String imageUri = "file://your_image_path";
+	        Glink.startImageWrite(MainActivity.this, -1, "", "", imageUri);
 	      }
 	    });
 
 	    findViewById(R.id.write_button3).setOnClickListener(new View.OnClickListener() {
 	      @Override public void onClick(View v) {
-	        int menuId = 4; // -1이면 메뉴를 선택하지 않는다.
-	        String text = "기본 제목, 본문, 비디오를 넣어서 글쓰기 화면을 시작합니다.\n비디오는 uri 형태로 넣어주시면 됩니다.";
 	        String videoUri = "file://your_video_path";
-	        Glink.startVideoWrite(MainActivity.this, menuId, "subject", text, videoUri);
+	        Glink.startVideoWrite(MainActivity.this, -1, "", "", videoUri);
 	      }
 	    });
 
