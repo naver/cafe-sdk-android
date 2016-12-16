@@ -17,6 +17,10 @@ PLUG SDK는 모바일 게임에서 이탈하지 않고 커뮤니케이션이 가
 - 문의 사항이 있는 경우 [카페](http://cafe.naver.com/navercafesdk) 혹은 [e-mail](dl_navercafesdk@navercorp.com)을 사용한다.
 
 
+- [최신버전 다운로드](https://github.com/naver/cafe-sdk-android/archive/master.zip)
+
+
+
 # Usages
 ## AndroidManifest 설정
 #### 네이버 카페 SDK 접근 권한
@@ -69,9 +73,6 @@ PLUG SDK는 모바일 게임에서 이탈하지 않고 커뮤니케이션이 가
         android:label="NeoId In-app"
         android:screenOrientation="sensor"/>
 ```
-
-
-- [다운로드](https://github.com/naver/cafe-sdk-android/archive/master.zip)
 
 
 ## Initialize
