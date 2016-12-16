@@ -6,6 +6,10 @@ PLUG SDK는 모바일 게임에서 이탈하지 않고 커뮤니케이션이 가
 
 이미 많은 게임에 적용되어 검증되어 있는 PLUG SDK는 손쉽게 커뮤니케이션 기능을 게임 안에 넣을 수 있습니다.
 
+- [최신버전 다운로드](https://github.com/naver/cafe-sdk-android/archive/master.zip)
+
+
+
 # How To Get Started
 - 최신 버전을 [다운로드](https://github.com/naver/cafe-sdk-ios/archive/master.zip)하면 샘플 프로젝트를 실행할 수 있다.
 - 한국 채널인 네이버 카페를 사용하기 위해 [제휴 신청](https://github.com/naver/cafe-sdk-ios/wiki/%5B%ED%95%9C%5D-%EC%84%A0%ED%96%89-%EC%9E%91%EC%97%85)이 필요하다.
@@ -16,8 +20,6 @@ PLUG SDK는 모바일 게임에서 이탈하지 않고 커뮤니케이션이 가
 - [개발 문의 사항](http://cafe.naver.com/ArticleList.nhn?search.clubid=28285034&search.menuid=13&search.boardtype=L)에 있는 질문과 답변이 적용하는데 도움이 될 수 있다.
 - 문의 사항이 있는 경우 [카페](http://cafe.naver.com/navercafesdk) 혹은 [e-mail](dl_navercafesdk@navercorp.com)을 사용한다.
 
-
-- [최신버전 다운로드](https://github.com/naver/cafe-sdk-android/archive/master.zip)
 
 
 
