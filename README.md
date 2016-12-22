@@ -85,8 +85,6 @@ PLUG SDK는 모바일 게임에서 이탈하지 않고 커뮤니케이션이 가
 
 [네이버 카페를 개설](http://section.cafe.naver.com/)하고 얻은 카페 ID를 세팅한다.
 
-[네이버 아이디로 로그인](https://developers.naver.com/products/login/api)에 애플리케이션 설정에 등록한 iOS URL Scheme을 세팅한다.
-
 init을 호출한다
 
 
