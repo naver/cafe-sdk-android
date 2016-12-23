@@ -74,6 +74,7 @@
     <string name="not_cafe_member">已退出的成员。</string>
     <string name="not_configured_event_menu_id">尚未设置活动菜单。</string>
     <string name="not_configured_notice_menu_id">尚未设置公告菜单。</string>
+    <string name="not_supported_os_version">An in-app community is available only in Android 4.1 or later.</string>
     <string name="photo_album">相簿</string>
     <string name="photo_upload_error">無法登錄照片。</string>
     <string name="profile_become_member">登录后自动成为Cafe成员。</string>

@@ -74,6 +74,7 @@
     <string name="not_cafe_member">탈퇴한 멤버입니다.</string>
     <string name="not_configured_event_menu_id">이벤트 메뉴가 설정되지 않았습니다.</string>
     <string name="not_configured_notice_menu_id">공지 사항 메뉴가 설정되지 않았습니다.</string>
+    <string name="not_supported_os_version">인앱 커뮤니티는 안드로이드 4.1버전 이상에서만 사용할 수 있습니다.</string>
     <string name="photo_album">사진 앨범</string>
     <string name="photo_upload_error">사진을 등록할 수 없습니다.</string>
     <string name="profile_become_member">로그인하면 자동으로 이 카페의 멤버가 됩니다.</string>

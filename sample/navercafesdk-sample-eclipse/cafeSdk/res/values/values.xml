@@ -182,9 +182,7 @@
     <string name="movie_permission_setting_message">You do not have permission to attach a video.\nPlease check your permission to save in the game which can be accessed from [Settings > App]. </string>
     <string name="need_login">Please log in.</string>
     <string name="network_error">Not connected due to a network problem.\nPlease check your network status and then try again.</string>
-    <string name="nick_name_already_join">You\'ve already asked to join this community. You are
-    currently undergoing the approval process.
-  </string>
+    <string name="nick_name_already_join">You\'ve already asked to join this community. You are currently undergoing the approval process.</string>
     <string name="nick_name_header">Enter Nickname</string>
     <string name="nick_name_hint">Enter your nickname.</string>
     <string name="nick_name_join">Join</string>
@@ -199,14 +197,14 @@
     <string name="not_cafe_member">Not a member of the Cafe anymore.</string>
     <string name="not_configured_event_menu_id">The Events menu has not been set.</string>
     <string name="not_configured_notice_menu_id">The Notices menu has not been set.</string>
+    <string name="not_supported_os_version">An in-app community is available only in Android 4.1 or later.</string>
     <string name="photo_album">Photo Albums</string>
     <string name="photo_upload_error">Uploading a photo failed.</string>
-    <string name="plug_sdk_version" translatable="false">2.2.0</string>
+    <string name="plug_sdk_version" translatable="false">2.2.1</string>
     <string name="profile_become_member">By logging in, you become a member of this Cafe.</string>
     <string name="profile_cafe_information">Community for every mobile game around the world, NAVER Cafe</string>
     <string name="profile_logout">Log Out</string>
-    <string name="profile_plug_information">A community for every mobile game around the world, PLUG
-  </string>
+    <string name="profile_plug_information">A community for every mobile game around the world, PLUG</string>
     <string name="profile_string">My Profile</string>
     <string name="profile_visit">Visit</string>
     <string name="recent_article_menu">View New Posts</string>

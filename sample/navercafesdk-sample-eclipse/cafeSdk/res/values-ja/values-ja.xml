@@ -74,6 +74,7 @@
     <string name="not_cafe_member">このユーザーは退会しています。</string>
     <string name="not_configured_event_menu_id">イベントメニューが設定されていません。</string>
     <string name="not_configured_notice_menu_id">お知らせメニューが設定されていません。</string>
+    <string name="not_supported_os_version">An in-app community is available only in Android 4.1 or later.</string>
     <string name="photo_album">相册</string>
     <string name="photo_upload_error">无法上传照片。</string>
     <string name="profile_become_member">ログインすると自動的にこのCafeのメンバーになります。</string>
