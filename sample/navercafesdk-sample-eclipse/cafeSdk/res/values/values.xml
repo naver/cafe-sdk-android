@@ -54,7 +54,7 @@
     <declare-styleable name="FloatingActionButton"><attr format="color" name="fab_colorNormal"/><attr format="color" name="fab_colorPressed"/><attr format="color" name="fab_colorDisabled"/><attr format="color" name="fab_colorRipple"/><attr format="boolean" name="fab_showShadow"/><attr format="color" name="fab_shadowColor"/><attr format="dimension" name="fab_shadowRadius"/><attr format="dimension" name="fab_shadowXOffset"/><attr format="dimension" name="fab_shadowYOffset"/><attr format="enum" name="fab_size">
       <enum name="normal" value="0"/>
       <enum name="mini" value="1"/>
-    </attr><attr format="reference" name="fab_showAnimation"/><attr format="reference" name="fab_hideAnimation"/><attr format="string" name="fab_label"/><attr format="dimension" name="fab_elevationCompat"/><attr format="color" name="fab_progress_color"/><attr format="color" name="fab_progress_backgroundColor"/><attr format="boolean" name="fab_progress_indeterminate"/><attr format="integer" name="fab_progress_max"/><attr format="integer" name="fab_progress"/><attr format="boolean" name="fab_progress_showBackground"/></declare-styleable>
+    </attr><attr format="reference" name="fab_showAnimation"/><attr format="reference" name="fab_hideAnimation"/><attr format="string" name="fab_label"/><attr format="dimension" name="fab_elevationCompat"/><attr format="color" name="fab_progress_color"/><attr format="color" name="fab_progress_backgroundColor"/><attr format="boolean" name="fab_progress_indeterminate"/><attr format="integer" name="fab_progress_max"/><attr format="integer" name="fab_progress"/><attr format="boolean" name="fab_progress_showBackground"/><attr format="boolean" name="fab_is_trash"/></declare-styleable>
     <declare-styleable name="FloatingActionMenu"><attr format="boolean" name="menu_showShadow"/><attr format="dimension" name="menu_buttonSpacing"/><attr format="dimension" name="menu_labels_margin"/><attr format="reference" name="menu_labels_showAnimation"/><attr format="reference" name="menu_labels_hideAnimation"/><attr format="dimension" name="menu_labels_paddingTop"/><attr format="dimension" name="menu_labels_paddingLeft"/><attr format="dimension" name="menu_labels_paddingRight"/><attr format="dimension" name="menu_labels_paddingBottom"/><attr format="dimension" name="menu_labels_padding"/><attr format="reference|color" name="menu_labels_textColor"/><attr format="dimension" name="menu_labels_textSize"/><attr format="dimension" name="menu_labels_cornerRadius"/><attr format="boolean" name="menu_labels_showShadow"/><attr format="color" name="menu_labels_colorNormal"/><attr format="color" name="menu_labels_colorPressed"/><attr format="color" name="menu_labels_colorRipple"/><attr format="enum" name="menu_labels_position">
       <enum name="left" value="0"/>
       <enum name="right" value="1"/>
@@ -84,8 +84,8 @@
     </attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
     <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="comment_reply_width">48dp</dimen>
+    <dimen name="comment_writer_nickname_margin_right">56dp</dimen>
     <dimen name="default_circle_indicator_radius">3dp</dimen>
     <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
     <dimen name="default_line_indicator_gap_width">4dp</dimen>
@@ -107,6 +107,7 @@
     <dimen name="glink_widget_padding">9dp</dimen>
     <dimen name="glink_widget_size_normal">54dp</dimen>
     <dimen name="labels_text_size">14sp</dimen>
+    <dimen name="viewer_animation_speed">2dp</dimen>
     <dimen name="widget_speed">3dp</dimen>
     <item name="fab_label" type="id"/>
     <item name="glide_image_url_tag" type="id"/>
@@ -118,7 +119,8 @@
     <string name="already_exist_nickname_message">The nickname is already in use.</string>
     <string name="article_comments_count">Comments</string>
     <string name="article_count_txt">Posted</string>
-    <string name="article_read_count">%,d Read</string>
+    <string name="article_empty">No posts</string>
+    <string name="article_read_count">%,d read</string>
     <string name="article_read_count_format">Search %1$,d</string>
     <string name="article_report_alert_message">Are you sure you want to report the content?</string>
     <string name="article_report_already_reported">It has been already reported.</string>
@@ -130,28 +132,27 @@
     <string name="article_search_placeholder">Search</string>
     <string name="article_video_alert_message">You may be charged extra fees if you turn on the cellular data such as 3G or LTE.</string>
     <string name="article_video_encoding_message">Encoding a video… Please try again after it is completed.</string>
-    <string name="attachment_add_fail_message">Uploading an image or video failed.</string>
+    <string name="attachment_add_fail_message">Uploading a photo or video failed.</string>
     <string name="available_nickname_message">The nickname is valid.</string>
     <string name="cafe_app_install_confirm_message">You can use it if you install or update the NAVER Cafe app.\nAre you going to install the app?</string>
     <string name="cancel">Cancel</string>
     <string name="cancel_article_write_confirm_message">Do you want to cancel a post?</string>
-    <string name="comment_empty">No comments here</string>
+    <string name="comment_empty">No comments</string>
     <string name="comment_hint">Please enter text.</string>
-    <string name="comment_not_exist">No Comments</string>
+    <string name="comment_not_exist">No comments</string>
     <string name="comment_write_permission_error">You do not have permission to add a comment.</string>
-    <string name="comments_more_view">View more %1d comments</string>
+    <string name="comments_more_view">View %1d comments</string>
     <string name="confirm">OK</string>
     <string name="count_format">%1$,d</string>
     <string name="date_format_hrs">%d hr</string>
     <string name="date_format_just_now">Just now</string>
     <string name="date_format_mins">%d min</string>
-    <string name="date_format_yesterday">yesterday</string>
+    <string name="date_format_yesterday">Yesterday</string>
     <string name="delete">Delete</string>
     <string name="delete_confirm_message">Do you want to delete it?</string>
-    <string name="deleted_comment">Deleted comment.</string>
-    <string name="deleted_post">Deleted post.</string>
+    <string name="deleted_comment">Deleted comment</string>
+    <string name="deleted_post">Deleted post</string>
     <string name="edit">Edit</string>
-    <string name="empty_articles_message">No posts</string>
     <string name="empty_recently_search_message">No recent search history</string>
     <string name="empty_search_articles_message">The requested content cannot be found.</string>
     <string name="error_no_article_comment">No posts you have commented on.</string>
@@ -167,7 +168,7 @@
     <string name="hosts_plug" translatable="false">https://global.apis.naver.com</string>
     <string name="hosts_upphoto" translatable="false">https://g-public2.upphoto.naver.com</string>
     <string name="image_permission_setting_message">You do not have permission to attach an image.\nPlease check your permission to save in the game which can be accessed from [Settings > App].</string>
-    <string name="image_upload_fail_message">Uploading an image failed.</string>
+    <string name="image_upload_fail_message">Uploading a photo failed.</string>
     <string name="internet_not_connected_error">Not connected to Internet.\nPlease check your wireless network status.</string>
     <string name="join_cafe">Join the Cafe now!</string>
     <string name="join_plug">Join the PLUG now!</string>
@@ -186,23 +187,23 @@
     <string name="nick_name_header">Enter Nickname</string>
     <string name="nick_name_hint">Enter your nickname.</string>
     <string name="nick_name_join">Join</string>
-    <string name="nick_name_join_agree">You must agree to Terms of Use.</string>
+    <string name="nick_name_join_agree">You must agree to NAVER Cafe Terms of Use.</string>
     <string name="nick_name_validate">You can enter no more than 10 Korean characters or 20 alphanumeric characters.</string>
     <string name="nickname_rule_global_message">Up to 20 characters</string>
     <string name="nickname_rule_message">Maximum of 10 Korean characters or 20 English characters (alphanumeric characters allowed)</string>
     <string name="no_menu_setting_message">Menus have not been set.</string>
-    <string name="no_permissions">No permissions.</string>
-    <string name="no_search_results">No results found.</string>
+    <string name="no_permissions">No permissions</string>
+    <string name="no_search_results">No results found</string>
     <string name="not_available_nickname_message">The nickname is not valid.</string>
-    <string name="not_cafe_member">Not a member of the Cafe anymore.</string>
+    <string name="not_cafe_member">Not a member of this Cafe anymore.</string>
     <string name="not_configured_event_menu_id">The Events menu has not been set.</string>
     <string name="not_configured_notice_menu_id">The Notices menu has not been set.</string>
     <string name="not_supported_os_version">An in-app community is available only in Android 4.1 or later.</string>
     <string name="photo_album">Photo Albums</string>
     <string name="photo_upload_error">Uploading a photo failed.</string>
-    <string name="plug_sdk_version" translatable="false">2.2.1.1</string>
+    <string name="plug_sdk_version" translatable="false">2.3.0</string>
     <string name="profile_become_member">By logging in, you become a member of this Cafe.</string>
-    <string name="profile_cafe_information">Community for every mobile game around the world, NAVER Cafe</string>
+    <string name="profile_cafe_information">A community for every mobile game around the world, NAVER Cafe</string>
     <string name="profile_logout">Log Out</string>
     <string name="profile_plug_information">A community for every mobile game around the world, PLUG</string>
     <string name="profile_string">My Profile</string>
@@ -219,10 +220,10 @@
     <string name="record_size_360">360p</string>
     <string name="record_size_480">480p</string>
     <string name="record_size_720">720p</string>
-    <string name="replies_more_view">View %1d replies</string>
+    <string name="replies_more_view">View %d replies</string>
     <string name="reply">Reply</string>
     <string name="require_join_message">You are required to join a community.</string>
-    <string name="require_login_message">Please log in with NAVER.</string>
+    <string name="require_login_message">Please log in.</string>
     <string name="retry">Retry</string>
     <string name="retry_after_a_while_message">Please try again later.</string>
     <string name="retry_error">Try again</string>
@@ -239,7 +240,7 @@
     <string name="select_menu_button">Select a forum.</string>
     <string name="unable_load_images">Unable to load images.</string>
     <string name="unable_load_videos">Unable to load videos.</string>
-    <string name="under_construction">Preparing</string>
+    <string name="under_construction">Under Construction</string>
     <string name="version">Current version %s</string>
     <string name="waiting_join_apply_message">Waiting for joining the Cafe…</string>
     <string name="want_cafe_member">Do you want to join the Cafe?</string>
@@ -266,6 +267,18 @@
   </style>
     <style name="Theme.glink.seekbar" parent="@android:style/Theme.Black">
 
+  </style>
+    <style name="multimedia_dialog_anim" parent="android:Animation">
+    <item name="@android:windowEnterAnimation">@anim/widget_enter</item>
+    <item name="@android:windowExitAnimation">@anim/widget_enter</item>
+  </style>
+    <style name="multimedia_dialog_anim_down" parent="android:Animation">
+    <item name="@android:windowEnterAnimation">@anim/widget_enter</item>
+    <item name="@android:windowExitAnimation">@anim/media_viewer_dialog_exit_down</item>
+  </style>
+    <style name="multimedia_dialog_anim_up" parent="android:Animation">
+    <item name="@android:windowEnterAnimation">@anim/widget_enter</item>
+    <item name="@android:windowExitAnimation">@anim/media_viewer_dialog_exit_up</item>
   </style>
     <style name="notitle_defaultdialog_msg" parent="@android:style/Theme.Holo.Light.Dialog">
     <item name="android:background">@android:color/transparent</item>

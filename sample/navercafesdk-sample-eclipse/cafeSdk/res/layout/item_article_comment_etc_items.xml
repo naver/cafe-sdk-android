@@ -10,7 +10,7 @@
       android:id="@+id/writer_nickname"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:paddingRight="56dp"
+      android:paddingRight="@dimen/comment_writer_nickname_margin_right"
       android:singleLine="true"
       android:textColor="@color/black2"
       android:textStyle="bold"

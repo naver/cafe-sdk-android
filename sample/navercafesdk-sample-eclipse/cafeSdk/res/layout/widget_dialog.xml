@@ -5,14 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
   <TextView
       android:id="@+id/ani_view"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:background="@drawable/gl_btn_default_big_normal"
+      android:layout_width="54dp"
+      android:layout_height="54dp"
       android:visibility="gone"/>
-
 
   <com.github.clans.fab.FloatingActionMenu
       android:id="@+id/float_menu"
@@ -29,6 +26,14 @@
       fab:menu_labels_paddingRight="1dp"
       fab:menu_backgroundColor="#ccffffff"
       fab:menu_openDirection="up">
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/float_item_trash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gl_icon_trash"
+        fab:fab_is_trash="true"
+        fab:fab_label="@string/delete"/>
 
     <com.github.clans.fab.FloatingActionButton
         android:id="@+id/float_item_cafe"

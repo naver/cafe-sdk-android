@@ -199,28 +199,6 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/profile_articles_blank"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@color/white2"
-            android:focusable="true"
-            android:clickable="true"
-            android:layout_weight="1">
-          <View
-              android:layout_width="match_parent"
-              android:layout_height="1dp"
-              android:background="@color/gray5"
-              android:layout_alignParentTop="true"/>
-          <View
-              android:id="@+id/profile_articles_blank_blank"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:visibility="gone"
-              android:background="@color/white2"/>
-
-        </RelativeLayout>
-
       </LinearLayout>
 
     </LinearLayout>

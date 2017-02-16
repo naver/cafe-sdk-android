@@ -38,4 +38,30 @@
       android:textColor="@color/white1"
       android:textSize="16dp"
       android:text="@string/retry_error"/>
+
+  <Button
+      android:id="@+id/btn_login"
+      android:layout_width="wrap_content"
+      android:layout_height="39dp"
+      android:layout_marginTop="16dp"
+      android:gravity="center"
+      android:paddingLeft="18dp"
+      android:paddingRight="18dp"
+      android:textColor="@color/white1"
+      android:textSize="16dp"
+      android:text="@string/need_login"
+      android:visibility="gone"/>
+
+  <Button
+      android:id="@+id/btn_logout"
+      android:layout_width="wrap_content"
+      android:layout_height="39dp"
+      android:layout_marginTop="16dp"
+      android:gravity="center"
+      android:paddingLeft="18dp"
+      android:paddingRight="18dp"
+      android:textColor="@color/white1"
+      android:textSize="16dp"
+      android:text="@string/profile_logout"
+      android:visibility="gone"/>
 </LinearLayout>

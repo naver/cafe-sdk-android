@@ -34,13 +34,12 @@ public class MainActivity extends Activity {
      */
     final int globalCafeId = 1013329;
     final String neoIdConsumerKey = "IHCd_HmSiMcXOMC37xZ8";
-    final String defaultChannel = "";
 
     //국내 카페 초기화
     Glink.init(this, clientId, clientSecret, cafeId);
 
     //글로벌 카페 초기화. 국내 카페만 사용할 경우 initGlobal을 하지 않아도 됩니다
-    //Glink.initGlobal(this, neoIdConsumerKey, globalCafeId, defaultChannel);
+    //Glink.initGlobal(this, neoIdConsumerKey, globalCafeId);
 
     // 게임 아이디와 카페 아이디를 매핑합니다.
     Glink.syncGameUserId(this, "id123");
@@ -111,14 +110,14 @@ public class MainActivity extends Activity {
     Glink.setOnWidgetScreenshotClickListener(new Glink.OnWidgetScreenshotClickListener() {
       @Override public void onScreenshotClick() {
         String path = screenshot(MainActivity.this);
-        Glink.startImageWrite(MainActivity.this, -1, "", "", path);
+        Glink.startImageWrite(MainActivity.this, path);
       }
     });
 
     //동영상 녹화 완료 리스너 설정.
     Glink.setOnRecordFinishListener(new Glink.OnRecordFinishListener() {
       @Override public void onRecordFinished(String uri) {
-        Glink.startVideoWrite(MainActivity.this, -1, "", "", uri);
+        Glink.startVideoWrite(MainActivity.this, uri);
       }
     });
 
@@ -159,21 +158,21 @@ public class MainActivity extends Activity {
 
     findViewById(R.id.write_button1).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
-        Glink.startWrite(MainActivity.this, -1, "", "");
+        Glink.startWrite(MainActivity.this);
       }
     });
 
     findViewById(R.id.write_button2).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         String imageUri = "file://your_image_path";
-        Glink.startImageWrite(MainActivity.this, -1, "", "", imageUri);
+        Glink.startImageWrite(MainActivity.this, imageUri);
       }
     });
 
     findViewById(R.id.write_button3).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
         String videoUri = "file://your_video_path";
-        Glink.startVideoWrite(MainActivity.this, -1, "", "", videoUri);
+        Glink.startVideoWrite(MainActivity.this, videoUri);
       }
     });
 

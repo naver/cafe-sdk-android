@@ -11,5 +11,5 @@
     android:drawablePadding="22dp"
     android:textColor="@color/gray4"
     android:textSize="16dp"
-    android:text="@string/empty_articles_message"
+    android:text="@string/article_empty"
     android:clickable="true"/>

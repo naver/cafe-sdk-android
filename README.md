@@ -160,9 +160,9 @@ README.md   | readme 파일
 1. [네이버 아이디 로그인](https://nid.naver.com/devcenter/docs.nhn?menu=Android)
 2. android support library v4
 3. [naver volleyer](http://mvnrepository.com/artifact/com.navercorp.volleyextensions/volleyer)   (2.0.1 사용 중)
-4. [volley](http://mvnrepository.com/artifact/com.mcxiaoke.volley/library/) (1.0.2사용 중)
-5. [google gson](http://mvnrepository.com/artifact/com.google.code.gson/gson)  (2.3.1 사용 중)
-6. [glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide)  (3.6.1 사용 중)
+4. [volley](http://mvnrepository.com/artifact/com.mcxiaoke.volley/library/) (1.0.2 사용 중)
+5. [google gson](http://mvnrepository.com/artifact/com.google.code.gson/gson)  (2.8.0 사용 중)
+6. [glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide)  (3.7.0 사용 중)
 7. [otto](http://mvnrepository.com/artifact/com.squareup/otto)  (1.3.8 사용 중)
 8. hmac (2.3.1 사용중)
 

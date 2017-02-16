@@ -97,7 +97,17 @@
             android:layout_height="32dp"
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:background="@drawable/gl_btn_close"
+            android:background="@drawable/gl_ls_btn_close"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/collapse"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/close"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gl_ls_btn_minimize"
             android:visibility="gone"/>
 
         <SeekBar
@@ -112,6 +122,13 @@
 
       <FrameLayout
           android:id="@+id/fullscreen_custom_content"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="gone"
+          android:background="@android:color/black"/>
+
+      <View
+          android:id="@+id/black_overlay_for_video_viewer"
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:visibility="gone"

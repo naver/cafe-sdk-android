@@ -17,20 +17,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-
         android:textColor="@color/black2"
         android:textStyle="bold"/>
-
-      <TextView
-        android:id="@+id/search_for_header"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:paddingLeft="14dp"
-        android:paddingRight="4dp"
-        android:paddingBottom="4dp"
-        android:drawableLeft="@drawable/gl_icon_search"
-        android:background="@android:color/transparent"/>
   </LinearLayout>
 
-  <include layout="@layout/view_divider"/>
+  <include android:id="@+id/header_divider" layout="@layout/view_divider"/>
 </LinearLayout>
