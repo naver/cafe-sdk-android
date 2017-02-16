@@ -272,14 +272,6 @@
     <item name="@android:windowEnterAnimation">@anim/widget_enter</item>
     <item name="@android:windowExitAnimation">@anim/widget_enter</item>
   </style>
-    <style name="multimedia_dialog_anim_down" parent="android:Animation">
-    <item name="@android:windowEnterAnimation">@anim/widget_enter</item>
-    <item name="@android:windowExitAnimation">@anim/media_viewer_dialog_exit_down</item>
-  </style>
-    <style name="multimedia_dialog_anim_up" parent="android:Animation">
-    <item name="@android:windowEnterAnimation">@anim/widget_enter</item>
-    <item name="@android:windowExitAnimation">@anim/media_viewer_dialog_exit_up</item>
-  </style>
     <style name="notitle_defaultdialog_msg" parent="@android:style/Theme.Holo.Light.Dialog">
     <item name="android:background">@android:color/transparent</item>
     <item name="android:windowBackground">@android:color/transparent</item>
