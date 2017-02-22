@@ -127,7 +127,7 @@ Glink.startHome(activity)
 
 
 # 폴더 구조
--------------
+
 
 file      | 설명 		
 ---			| ---		
@@ -141,7 +141,7 @@ README.md   | readme 파일
 
 
 # 의존 라이브러리 - 샘플 프로젝트에 포함되어 있다.
--------------
+
 
 1. [네이버 아이디 로그인](https://nid.naver.com/devcenter/docs.nhn?menu=Android)
 2. android support library v4
@@ -152,8 +152,8 @@ README.md   | readme 파일
 7. [otto](http://mvnrepository.com/artifact/com.squareup/otto)  (1.3.8 사용 중)
 8. hmac (2.3.1 사용중)
 
-# 라이선스
--------------
+# License
+
 NAVER Cafe SDK for Android
 
 Copyright 2015 NAVER Corp.
