@@ -1,4 +1,23 @@
 
+
+v.2.4.0
+-------------
+### updated
+1. pinned 기능
+2. 댓글 목록에 답글 3개 미리 보기
+3. 구글 로그인 WebView에서 크롬으로 처리 (안드로이드)
+- 관련 이슈: https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1
+4. '스마트폰 앱 접근권한에 대한 정보통신망법 시행령'에 따른 권한 획득시 사용처 고지
+5. 위젯 스크린샷 버튼 on/off 추가
+
+
+
+v.2.3.2
+-------------
+### fixed
+1. 위젯 사라지는 현상 수정
+
+
 v.2.3.1
 -------------
 ### fixed

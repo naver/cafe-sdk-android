@@ -163,6 +163,7 @@ PLUG SDK를 사용하려면 다음 라이브러리를 프로젝트에 추가해 
 - [Glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide)(3.7.0 버전 사용 중)
 - [Otto](http://mvnrepository.com/artifact/com.squareup/otto)(1.3.8 버전 사용 중)
 - hmac(2.3.1 버전 사용중)
+- android customtabs (23.1.0 버전 사용중)
 
 ## License 
 

@@ -48,8 +48,11 @@ public class MainActivity extends Activity {
 	    // 게임 아이디와 카페 아이디를 매핑합니다.
 	    Glink.syncGameUserId(this, "id123");
 
-	    // 동영상 녹화 기능을 사용합니다.
+	    // 위젯의 동영상 녹화 기능을 사용합니다.
 	    Glink.setUseVideoRecord(this, true);
+
+	    // 위젯의 스크린샷 기능을 사용합니다.
+	    Glink.setUseScreenshot(this, true);
 
 	    // SDK 시작 리스너 설정.
 	    Glink.setOnSdkStartedListener(new Glink.OnSdkStartedListener() {

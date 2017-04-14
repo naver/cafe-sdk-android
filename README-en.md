@@ -161,6 +161,7 @@ You should add the following libraries to your project and build together with t
 - [Glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide) (version 3.7.0)
 - [Otto](http://mvnrepository.com/artifact/com.squareup/otto) (version 1.3.8)
 - hmac (version 2.3.1)
+- android customtabs (version 23.1.0)
 
 ## License 
 
