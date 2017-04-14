@@ -5,7 +5,7 @@ v.2.4.0
 ### updated
 1. pinned 기능
 2. 댓글 목록에 답글 3개 미리 보기
-3. 구글 로그인 WebView에서 크롬으로 처리 (안드로이드)
+3. 구글 로그인 WebView에서 크롬으로 처리 (android customtabs 라이브러리 추가)
 
  - 관련 이슈: https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html?m=1
 
