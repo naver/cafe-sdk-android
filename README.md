@@ -67,10 +67,6 @@ PLUG SDK에 필요한 접근 권한을 추가합니다.
         android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
         android:screenOrientation="sensorLandscape"
         android:label="OAuth2.0 In-app"/>
-    <activity
-       android:name="com.naver.glink.android.sdk.ui.VideoPlayActivity"
-       android:screenOrientation="sensorLandscape"
-       android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
 ```
 
 PLUG SDK가 외국어를 지원할 때는 다음과 같이 NeoIdInAppBrowserActivity 액티비티 설정을 추가해야 합니다.
@@ -81,6 +77,15 @@ PLUG SDK가 외국어를 지원할 때는 다음과 같이 NeoIdInAppBrowserActi
         android:configChanges="keyboardHidden|screenSize|orientation"
         android:label="NeoId In-app"
         android:screenOrientation="sensor"/>
+        
+        <activity android:name=".login.neoid.PlugSchemeActivity">
+          <intent-filter>
+              <action android:name="android.intent.action.VIEW"/>
+              <category android:name="android.intent.category.DEFAULT"/>
+              <category android:name="android.intent.category.BROWSABLE"/>
+              <data android:scheme="naverplug"/>
+          </intent-filter>
+      </activity>
 ```
 
 ### 2. 초기화
