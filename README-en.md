@@ -64,10 +64,6 @@ Copy and paste the code below to add activities for NAVER Login and PLUG SDK.
         android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
         android:screenOrientation="sensorLandscape"
         android:label="OAuth2.0 In-app"/>
-    <activity
-       android:name="com.naver.glink.android.sdk.ui.VideoPlayActivity"
-       android:screenOrientation="sensorLandscape"
-       android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
 ```
 
 Add the NeoIdInAppBrowserActivity activity setting to support languages other than Korean.
@@ -78,6 +74,15 @@ Add the NeoIdInAppBrowserActivity activity setting to support languages other th
         android:configChanges="keyboardHidden|screenSize|orientation"
         android:label="NeoId In-app"
         android:screenOrientation="sensor"/>
+        
+      <activity android:name=".login.neoid.PlugSchemeActivity">
+          <intent-filter>
+              <action android:name="android.intent.action.VIEW"/>
+              <category android:name="android.intent.category.DEFAULT"/>
+              <category android:name="android.intent.category.BROWSABLE"/>
+              <data android:scheme="naverplug"/>
+          </intent-filter>
+      </activity>
 ```
 
 ### 2. Initialize the PLUG SDK
