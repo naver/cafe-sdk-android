@@ -75,7 +75,7 @@ Add the NeoIdInAppBrowserActivity activity setting to support languages other th
         android:label="NeoId In-app"
         android:screenOrientation="sensor"/>
         
-      <activity android:name=".login.neoid.PlugSchemeActivity">
+      <activity android:name="com.naver.glink.android.sdk.login.neoid.PlugSchemeActivity">
           <intent-filter>
               <action android:name="android.intent.action.VIEW"/>
               <category android:name="android.intent.category.DEFAULT"/>
