@@ -78,7 +78,7 @@ PLUG SDK가 외국어를 지원할 때는 다음과 같이 NeoIdInAppBrowserActi
         android:label="NeoId In-app"
         android:screenOrientation="sensor"/>
         
-        <activity android:name=".login.neoid.PlugSchemeActivity">
+      <activity android:name=".login.neoid.PlugSchemeActivity">
           <intent-filter>
               <action android:name="android.intent.action.VIEW"/>
               <category android:name="android.intent.category.DEFAULT"/>
