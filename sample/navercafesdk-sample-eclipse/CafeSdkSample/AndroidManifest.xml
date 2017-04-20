@@ -18,34 +18,35 @@
       android:label="@string/app_name"
       android:supportsRtl="true"
       android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
-    <activity
-        android:name="com.naver.glink.sample.MainActivity"
-        android:label="@string/app_name"
-        android:screenOrientation="sensorLandscape">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
-        <category android:name="android.intent.category.LAUNCHER"/>
-      </intent-filter>
-    </activity>
-    
-    <activity
-        android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
-        android:screenOrientation="sensorLandscape"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-    <activity
-        android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
-        android:screenOrientation="sensorLandscape"
-        android:label="OAuth2.0 In-app"/>
-    <activity
-    android:name="com.naver.glink.android.sdk.ui.VideoPlayActivity"
-    android:screenOrientation="sensorLandscape"
-    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
-    
-    <activity
-        android:name="com.naver.glink.android.sdk.login.neoid.NeoIdInAppBrowserActivity"
-        android:configChanges="keyboardHidden|screenSize|orientation"
-        android:label="NeoId In-app"
-        android:screenOrientation="sensor"/>
-  </application>
+      
+      <activity
+      android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+      <activity
+      android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+      android:label="OAuth2.0 In-app"/>
+      <activity
+      android:name=".login.neoid.NeoIdInAppBrowserActivity"
+      android:configChanges="keyboardHidden|screenSize|orientation"
+      android:label="NeoId In-app"
+      android:screenOrientation="sensor"/>
+      
+      <activity
+      android:name=".ui.parent.plugfragment.activityresult.RequestActivity"
+      android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+      
+      <activity android:name=".login.neoid.PlugSchemeActivity">
+          <intent-filter>
+              <action android:name="android.intent.action.VIEW"/>
+              <category android:name="android.intent.category.DEFAULT"/>
+              <category android:name="android.intent.category.BROWSABLE"/>
+              <data android:scheme="naverplug"/>
+          </intent-filter>
+      </activity>
+      
+      <!-- samsung 갤럭시 S8 대응 -->
+      <meta-data android:name="android.max_aspect" android:value="2.1"/>
+      </application>
 
 </manifest>
