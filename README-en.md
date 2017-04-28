@@ -161,7 +161,7 @@ You should add the following libraries to your project and build together with t
 - Android Support Library v4
 - [NAVER Login](https://nid.naver.com/devcenter/docs.nhn?menu=Android)
 - [NAVER Volleyer](http://mvnrepository.com/artifact/com.navercorp.volleyextensions/volleyer) (version 2.0.1)
-- [Volley](http://mvnrepository.com/artifact/com.mcxiaoke.volley/library/) (version 1.0.2)
+- Android Volley (version 1.0.0)
 - [Google Gson](http://mvnrepository.com/artifact/com.google.code.gson/gson) (version 2.8.0)
 - [Glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide) (version 3.7.0)
 - [Otto](http://mvnrepository.com/artifact/com.squareup/otto) (version 1.3.8)

@@ -20,6 +20,17 @@
       android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
       
       <activity
+        android:name="com.naver.glink.sample.MainActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="sensorLandscape">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+        
+      
+      <activity
       android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
       android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
       <activity
