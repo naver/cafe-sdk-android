@@ -6,7 +6,7 @@ android {
 
   defaultConfig {
     applicationId "com.naver.glink.android.sample"
-    minSdkVersion 16
+    minSdkVersion 17
     targetSdkVersion 23
     versionCode 1
     versionName "1.0"
@@ -28,14 +28,15 @@ repositories {
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
-  compile(name:'cafeSdk-2.5.2', ext:'aar')
-  compile 'com.android.support:design:23.1.0'
-  compile "com.android.support:support-v4:23.1.0"
+  compile(name:'cafeSdk-3.1.0', ext:'aar')
+
   compile 'com.navercorp.volleyextensions:volleyer:2.0.1', {
     exclude group: 'com.mcxiaoke.volley', module: 'library'
   }
   compile 'com.google.code.gson:gson:2.8.0'
   compile 'com.github.bumptech.glide:glide:3.7.0'
   compile 'com.squareup:otto:1.3.8'
+
+  compile "com.android.support:support-v4:23.1.0"
 
 }

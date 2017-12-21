@@ -13,7 +13,7 @@ lint.xml
 
 /sample/navercafesdk-sample-eclipse/*/bin/**/*
 /sample/navercafesdk-sample-eclipse/*/gen/**/*
-/sample/navercafesdk-sample-android-studio/.gradle/**/*
-/sample/navercafesdk-sample-android-studio/.idea/**/*
-/sample/navercafesdk-sample-android-studio/build/**/*
-/sample/navercafesdk-sample-android-studio/local.properties
+/sample/**/.gradle/**/*
+/sample/**/.idea/**/*
+/sample/**/build/**/*
+/sample/**/local.properties

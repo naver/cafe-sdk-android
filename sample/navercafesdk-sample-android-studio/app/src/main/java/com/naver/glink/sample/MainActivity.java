@@ -131,33 +131,6 @@ public class MainActivity extends Activity {
       }
     });
 
-    findViewById(R.id.notice_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        // 공지화면으로 시작합니다.
-        Glink.startNotice(MainActivity.this);
-      }
-    });
-
-    findViewById(R.id.event_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        // 이벤트화면으로 시작합니다.
-        Glink.startEvent(MainActivity.this);
-      }
-    });
-
-    findViewById(R.id.menu_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        // 메뉴화면으로 시작합니다.
-        Glink.startMenu(MainActivity.this);
-      }
-    });
-
-    findViewById(R.id.profile_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        // 프로필화면으로 시작합니다.
-        Glink.startProfile(MainActivity.this);
-      }
-    });
 
     findViewById(R.id.write_button1).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
@@ -179,12 +152,6 @@ public class MainActivity extends Activity {
       }
     });
 
-    findViewById(R.id.articles_button).setOnClickListener(new View.OnClickListener() {
-      @Override public void onClick(View v) {
-        // 특정 메뉴의 게시글 목록으로 시작합니다.
-        Glink.startMenu(MainActivity.this, 4);
-      }
-    });
 
     findViewById(R.id.orientation_button).setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View v) {
