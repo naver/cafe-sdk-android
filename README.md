@@ -144,6 +144,15 @@ startHome() 메서드는 홈 탭이 선택된 상태로 PLUG SDK를 시작하는
 Glink.startHome(activity)
 ```
 
+### 5. LIVE
+
+PLUG SDK는 사용자가 게임 화면을 실시간 스트리밍 할 수 있는 기능을 제공합니다.
+
+[라이브 상세 가이드](https://developers.naver.com/apps/#/register?api=nvlogin)
+
+![LIVE](https://cafeptthumb-phinf.pstatic.net/MjAxNzExMTRfMTE3/MDAxNTEwNjQ2MTk3MjM1.7ss4wFV1nGd0Q_Lk8jpQ_HV2pJv_MR_w7FbHg74NSHog.Tc4f5bQ7IWR8Wbnc5xGVVeTPK1lZ7NyyWcMdA4li1qUg.PNG.cafesdksupport/02.PNG?type=w740)
+
+
 ## Files and Folders
 
 |폴더 및 파일 이름|설명|
