@@ -144,7 +144,7 @@ startHome() 메서드는 홈 탭이 선택된 상태로 PLUG SDK를 시작하는
 Glink.startHome(activity)
 ```
 
-### 5. LIVE
+### 4. LIVE
 
 PLUG SDK는 사용자가 게임 화면을 실시간 스트리밍 할 수 있는 기능을 제공합니다.
 
