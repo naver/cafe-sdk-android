@@ -36,12 +36,15 @@ repositories {
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
-  compile(name:'cafeSdk-3.2.4', ext:'aar')
+  compile(name:'cafeSdk-3.2.6', ext:'aar')
 
-  compile(name:'cafeSdk-live-3.2.3', ext:'aar')
+  compile(name:'cafeSdk-live-3.2.6', ext:'aar')
   compile(name:'android-database-sqlcipher-3.5.7', ext:'aar')
   compile(name:'androidasync-2.2.1', ext:'aar')
-  compile(name:'kaleido-android-1.4.2-SNAPSHOT', ext:'aar')
+
+  compile('com.naver.kaleido:kaleido-android:1.4.8@aar') {
+    transitive = true
+  }
 
   compile 'com.navercorp.volleyextensions:volleyer:2.0.1', {
     exclude group: 'com.mcxiaoke.volley', module: 'library'

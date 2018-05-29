@@ -1,3 +1,12 @@
+v.3.2.6
+-------------
+### updated
+1. kaleido 1.4.8 update
+
+### fixed
+1. Android 8.0 이상일 때 live 중 화면 터치 안되는 이슈 수정
+
+
 v.3.2.5
 -------------
 ### fixed
