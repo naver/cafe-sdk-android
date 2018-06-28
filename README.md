@@ -170,6 +170,8 @@ PLUG SDK는 사용자가 게임 화면을 실시간 스트리밍 할 수 있는 
 PLUG SDK를 사용하려면 다음 라이브러리를 프로젝트에 추가해 함께 빌드해야 합니다. 라이브러리는 샘플 프로젝트에 포함돼 있습니다.
 
 - Android Support Library v4
+- Android Support Custom Tabs
+- Android Support RecyclerView
 - [네이버 아이디 로그인](https://nid.naver.com/devcenter/docs.nhn?menu=Android)
 - [NAVER Volleyer](http://mvnrepository.com/artifact/com.navercorp.volleyextensions/volleyer)(2.0.1 버전 사용 중)
 - Android Volley(1.0.0 버전 사용 중)
@@ -177,7 +179,6 @@ PLUG SDK를 사용하려면 다음 라이브러리를 프로젝트에 추가해 
 - [Glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide)(3.7.0 버전 사용 중)
 - [Otto](http://mvnrepository.com/artifact/com.squareup/otto)(1.3.8 버전 사용 중)
 - hmac(2.3.1 버전 사용중)
-- android customtabs (23.1.0 버전 사용중)
 
 ## License 
 

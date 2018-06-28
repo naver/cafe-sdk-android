@@ -159,6 +159,8 @@ Glink.startHome(activity)
 You should add the following libraries to your project and build together with the PLUG SDK in order to use the PLUG SDK. The libraries are included in the sample project.
 
 - Android Support Library v4
+- Android Support Custom Tabs
+- Android Support RecyclerView
 - [NAVER Login](https://nid.naver.com/devcenter/docs.nhn?menu=Android)
 - [NAVER Volleyer](http://mvnrepository.com/artifact/com.navercorp.volleyextensions/volleyer) (version 2.0.1)
 - Android Volley (version 1.0.0)
@@ -166,7 +168,6 @@ You should add the following libraries to your project and build together with t
 - [Glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide) (version 3.7.0)
 - [Otto](http://mvnrepository.com/artifact/com.squareup/otto) (version 1.3.8)
 - hmac (version 2.3.1)
-- android customtabs (version 23.1.0)
 
 ## License 
 
