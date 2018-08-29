@@ -1,3 +1,12 @@
+v.3.3.4 or v.4.0.0 (예정)
+-------------
+### fixed
+1. 안드로이드 영상 녹화 시 프리징 현상
+https://cafe.naver.com/navercafesdk/2006
+
+2. 안드로이드 P : 투명도 조절 버튼 클릭 시 크래시 발생
+https://cafe.naver.com/navercafesdk/2016
+
 v.3.3.2
 -------------
 ### fixed
