@@ -10,7 +10,9 @@ android {
     targetSdkVersion 23
     versionCode 1
     versionName "1.0"
+    multiDexEnabled true
   }
+
   buildTypes {
     release {
       minifyEnabled false
@@ -28,7 +30,7 @@ repositories {
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
-  compile(name:'cafeSdk-3.3.2', ext:'aar')
+  compile(name:'cafeSdk-4.0.0', ext:'aar')
 
   compile 'com.navercorp.volleyextensions:volleyer:2.0.1', {
     exclude group: 'com.mcxiaoke.volley', module: 'library'
@@ -38,5 +40,5 @@ dependencies {
   compile 'com.squareup:otto:1.3.8'
 
   compile "com.android.support:support-v4:23.1.0"
-
+  compile "com.android.support:multidex:1.0.1"
 }
