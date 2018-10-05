@@ -35,12 +35,13 @@ public class MainActivity extends Activity {
     final String consumerKey = "PLUGTESTKEY";
     final String consumerSecretKey = "PLUGTESTSECRET";
     final int cummunityNo = 1;
+    final int loungeNo = 58;
 
     //국내 카페 초기화
     Glink.init(this, clientId, clientSecret, cafeId);
 
     //글로벌 카페 초기화. 국내 카페만 사용할 경우 initGlobal을 하지 않아도 됩니다
-    Glink.initGlobal(this, "PLUGTESTKEY", "PLUGTESTSECRET", cummunityNo);
+    Glink.initGlobal(this, "PLUGTESTKEY", "PLUGTESTSECRET", cummunityNo, loungeNo);
 
     // 게임 아이디와 카페 아이디를 매핑합니다.
     Glink.syncGameUserId(this, "id123");
