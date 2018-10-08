@@ -112,16 +112,19 @@ Glink.init(this, clientId, clientSecret, cafeId);
 
 외국어만 지원하는 PLUG SDK를 초기화할 때는 다음과 같은 초기화 옵션을 설정하고 initGlobal() 메서드를 호출합니다.
 
-- globalCafeId: 커뮤니티를 개설하고 받은 커뮤니티 ID(Community ID)
-- neoIdConsumerKey: 커뮤니티를 개설하고 받은 컨슈머 키(Consumer Key)
+- consumerKey: 커뮤니티를 개설하고 받은 컨슈머 키(Consumer Key)
+- consumerSecretKey: 커뮤니티를 개설하고 받은 컨슈머 시크릿(Consumer Secret Key)
+- cummunityNo: 커뮤니티를 개설하고 받은 커뮤니티 No(cummunityNo)
+- loungeNo: 라운지를 개설하고 받은 라운지 No(cummunityNo)
 
 initGlobal() 메서드는 외국어를 지원하는 PLUG SDK를 초기화하는 메서드입니다.
 
 ```java
-final int globalCafeId = 1013329;
-final String neoIdConsumerKey = "IHCd_HmSiMcXOMC37xZ8";
-final String defaultChannel = "";
-Glink.initGlobal(this, neoIdConsumerKey, globalCafeId, defaultChannel);
+final String consumerKey = "PLUGTESTKEY";
+final String consumerSecretKey = "PLUGTESTSECRET";
+final int cummunityNo = 1;
+final int loungeNo = 58;
+Glink.initGlobal(this, "PLUGTESTKEY", "PLUGTESTSECRET", cummunityNo, loungeNo);
 ```
 
 > **커뮤니티 ID와 컨슈머 키 확인**  
@@ -192,3 +195,5 @@ All rights reserved.
 
 Unauthorized use, modification and redistribution of this software are strongly prohibited.
 ```
+
+PLUG SDK 2.x, 3.x 버전은 더 이상 지원되지 않습니다.

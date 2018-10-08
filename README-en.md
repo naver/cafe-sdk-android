@@ -110,16 +110,19 @@ Glink.init(this, clientId, clientSecret, cafeId);
 
 Configure the initialization information below and call the initGlobal() method to initialize the PLUG SDK that supports languages other than Korean.
 
-- globalCafeId: Community ID you received after creating your community
-- neoIdConsumerKey: Consumer key you received after creating your community
+- consumerKey: Community Key you received after creating your community
+- consumerSecretKey: Community Scret Key you received after creating your community
+- cummunityNo: Community No received after creating your community
+- loungeNo: Lounge No received after creating your lounge
 
 The initGlobal() method initializes the PLUG SDK that supports languages other than Korean.
 
 ```java
-final int globalCafeId = 1013329;
-final String neoIdConsumerKey = "IHCd_HmSiMcXOMC37xZ8";
-final String defaultChannel = "";
-Glink.initGlobal(this, neoIdConsumerKey, globalCafeId, defaultChannel);
+final String consumerKey = "PLUGTESTKEY";
+final String consumerSecretKey = "PLUGTESTSECRET";
+final int cummunityNo = 1;
+final int loungeNo = 58;
+Glink.initGlobal(this, "PLUGTESTKEY", "PLUGTESTSECRET", cummunityNo, loungeNo);
 ```
 
 > **How to check your community ID and consumer key**  
@@ -181,3 +184,6 @@ All rights reserved.
 
 Unauthorized use, modification and redistribution of this software are strongly prohibited.
 ```
+
+PLUG SDK 2.x, 3.x versions are no longer supported.
+
