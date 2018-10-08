@@ -39,6 +39,8 @@ dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
   compile(name:'cafeSdk-4.0.0', ext:'aar')
   compile(name:'cafeSdk-live-4.0.0', ext:'aar')
+  compile(name:'sos_library-1.1.3.4', ext:'aar')
+
   compile(name:'android-database-sqlcipher-3.5.7', ext:'aar')
   compile(name:'androidasync-2.2.1', ext:'aar')
   compile(name:'kaleido-android-1.4.8', ext:'aar')
@@ -56,4 +58,6 @@ dependencies {
 
   compile 'com.android.support:recyclerview-v7:23.1.0'
   compile "com.android.support:multidex:1.0.1"
+
+
 }
