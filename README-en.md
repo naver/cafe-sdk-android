@@ -1,6 +1,6 @@
 # PLUG SDK
 
-The PLUG SDK is a dedicated in-app community library for mobile games, which lets mobile gamers use community features without leaving games while they are playing. It is easy to apply the PLUG SDK  to your project.
+* PLUG SDK 2.x, 3.x versions are no longer supported.
 
 As a proven SDK, which has been used in many mobile games, this lets you simply and quickly add community features in your game.
  
@@ -185,5 +185,4 @@ All rights reserved.
 Unauthorized use, modification and redistribution of this software are strongly prohibited.
 ```
 
-PLUG SDK 2.x, 3.x versions are no longer supported.
 
