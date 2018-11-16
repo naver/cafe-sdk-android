@@ -30,7 +30,7 @@ repositories {
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
-  compile(name:'cafeSdk-4.0.3', ext:'aar')
+  compile(name:'cafeSdk-4.0.4', ext:'aar')
   compile(name:'sos_library-1.1.3.4', ext:'aar')
 
   compile 'com.navercorp.volleyextensions:volleyer:2.0.1', {
