@@ -21,7 +21,7 @@ PLUG SDK를 앱에 적용하려면 PLUG SDK 제휴를 신청해야 합니다. �
 
 ### 적용 가이드
 
-- [PLUG 적용 가이드](https://www.gitbook.com/book/plug/plug-sdk-android/details)
+- [PLUG 적용 가이드](https://plug-guide.gitbook.io/doc/android)
 - [최신 버전 및 샘플 프로젝트 다운로드](https://github.com/naver/cafe-sdk-android/archive/master.zip)
 
 ## Communication 
@@ -74,20 +74,10 @@ PLUG SDK에 필요한 접근 권한을 추가합니다.
 PLUG SDK가 외국어를 지원할 때는 다음과 같이 NeoIdInAppBrowserActivity 액티비티 설정을 추가해야 합니다.
 
 ```xml
-      <activity
-        android:name="com.naver.glink.android.sdk.login.neoid.NeoIdInAppBrowserActivity"
-        android:configChanges="keyboardHidden|screenSize|orientation"
-        android:label="NeoId In-app"
-        android:screenOrientation="sensor"/>
-        
-      <activity android:name="com.naver.glink.android.sdk.login.neoid.PlugSchemeActivity">
-          <intent-filter>
-              <action android:name="android.intent.action.VIEW"/>
-              <category android:name="android.intent.category.DEFAULT"/>
-              <category android:name="android.intent.category.BROWSABLE"/>
-              <data android:scheme="naverplug"/>
-          </intent-filter>
-      </activity>
+    <activity
+        android:name="com.naver.plug.moot.login.MootInAppBrowserActivity"
+        android:label="Moot In-app"
+        android:screenOrientation="sensor" />
 ```
 
 ### 2. 초기화
@@ -129,11 +119,6 @@ final int loungeNo = 58;
 Glink.initGlobal(this, "PLUGTESTKEY", "PLUGTESTSECRET", cummunityNo, loungeNo);
 ```
 
-> **커뮤니티 ID와 컨슈머 키 확인**  
-> 커뮤니티를 개설하고 받은 커뮤니티 ID와 컨슈머 키를 확인하려면 [커뮤니티 관리 페이지](http://g.cafe.naver.com/plugsample/manage/consumer)에 매니저 권한으로 접근하십시오.  
-> 커뮤니티 관리 페이지에서 **Settings > Communities > In-App Community Settings** 메뉴를 선택하면 커뮤니티 ID와 컨슈머 키를 확인할 수 있습니다.  
-> ![In-App Community Settings](https://plug.gitbooks.io/plug-sdk-android/content/assets/wiki-plug-setting.png)
-
 ### 3. PLUG SDK 시작
 
 초기화가 완료되면 PLUG SDK를 실행합니다.
@@ -149,22 +134,12 @@ startHome() 메서드는 홈 탭이 선택된 상태로 PLUG SDK를 시작하는
 Glink.startHome(activity)
 ```
 
-### 4. LIVE
-
-PLUG SDK는 사용자가 게임 화면을 실시간 스트리밍 할 수 있는 기능을 제공합니다.
-
-[라이브 상세 가이드](https://plug.gitbooks.io/plug-sdk-android/content/ko/[%ED%95%9C]-%ED%94%8C%EB%9F%AC%EA%B7%B8-%EB%9D%BC%EC%9D%B4%EB%B8%8C.html)
-
-![LIVE](https://cafeptthumb-phinf.pstatic.net/MjAxNzExMTRfMTE3/MDAxNTEwNjQ2MTk3MjM1.7ss4wFV1nGd0Q_Lk8jpQ_HV2pJv_MR_w7FbHg74NSHog.Tc4f5bQ7IWR8Wbnc5xGVVeTPK1lZ7NyyWcMdA4li1qUg.PNG.cafesdksupport/02.PNG?type=w740)
-
-
 ## Files and Folders
 
 |폴더 및 파일 이름|설명|
 |---|---|
 |guide/|PLUG SDK 적용 가이드가 있는 폴더|
-|lib/|Android용 PLUG SDK 라이브러리 파일이 있는 폴더|
-|sample/|Eclipse 및 Android Studio용 샘플 프로젝트가 있는 폴더|
+|sample/|Android Studio용 샘플 프로젝트가 있는 폴더|
 |NOTICE|라이선스 파일|
 |NAVER-COPYING|네이버 라이선스 파일|
 |CHANGELOG|PLUG SDK 버전 업데이트 내역|
