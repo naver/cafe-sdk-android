@@ -56,30 +56,6 @@ PLUG SDK에 필요한 접근 권한을 추가합니다.
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>           <!-- 선택 사항 -->
 ```
 
-#### 1.3 액티비티 추가
-
-네이버 아이디로 로그인에서 사용하는 액티비티와 PLUG SDK에서 사용하는 액티비티를 추가합니다.
-
-```xml
-    <activity
-        android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
-        android:screenOrientation="sensorLandscape"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-    <activity
-        android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
-        android:screenOrientation="sensorLandscape"
-        android:label="OAuth2.0 In-app"/>
-```
-
-PLUG SDK가 외국어를 지원할 때는 다음과 같이 NeoIdInAppBrowserActivity 액티비티 설정을 추가해야 합니다.
-
-```xml
-    <activity
-        android:name="com.naver.plug.moot.login.MootInAppBrowserActivity"
-        android:label="Moot In-app"
-        android:screenOrientation="sensor" />
-```
-
 ### 2. 초기화
 
 PLUG SDK가 지원하는 언어에 따라 다음과 같이 PLUG SDK를 초기화합니다.
