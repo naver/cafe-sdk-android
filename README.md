@@ -125,14 +125,12 @@ Glink.startHome(activity)
 
 PLUG SDK를 사용하려면 다음 라이브러리를 프로젝트에 추가해 함께 빌드해야 합니다. 라이브러리는 샘플 프로젝트에 포함돼 있습니다.
 
-- Android Support Library v4
-- Android Support Custom Tabs
-- Android Support RecyclerView
+- Androidx Jetpack library
 - [네이버 아이디 로그인](https://nid.naver.com/devcenter/docs.nhn?menu=Android)
 - [NAVER Volleyer](http://mvnrepository.com/artifact/com.navercorp.volleyextensions/volleyer)(2.0.1 버전 사용 중)
 - Android Volley(1.0.0 버전 사용 중)
 - [Google Gson](http://mvnrepository.com/artifact/com.google.code.gson/gson)(2.8.0 버전 사용 중)
-- [Glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide)(3.7.0 버전 사용 중)
+- [Glide](http://mvnrepository.com/artifact/com.github.bumptech.glide/glide)(4.12.0 버전 사용 중)
 - [Otto](http://mvnrepository.com/artifact/com.squareup/otto)(1.3.8 버전 사용 중)
 - hmac(2.3.1 버전 사용중)
 
